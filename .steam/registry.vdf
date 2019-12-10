@@ -1,0 +1,60 @@
+"Registry"
+{
+	"HKLM"
+	{
+		"Software"
+		{
+			"Valve"
+			{
+				"Steam"
+				{
+					"SteamPID"		"0"
+					"TempAppCmdLine"		""
+				}
+			}
+		}
+	}
+	"HKCU"
+	{
+		"Software"
+		{
+			"Valve"
+			{
+				"Steam"
+				{
+					"RunningAppID"		"0"
+					"AutoLoginUser"		"qw941213"
+					"RememberPassword"		"1"
+					"SourceModInstallPath"		"/home/alex/.local/share/Steam/steamapps\sourcemods"
+					"Rate"		"30000"
+					"AlreadyRetriedOfflineMode"		"0"
+					"StartupMode"		"0"
+					"language"		"schinese"
+					"Apps"
+					{
+						"1046930"
+						{
+							"Installed"		"0"
+							"Updating"		"0"
+							"Running"		"0"
+							"name"		"Dota Underlords"
+						}
+						"570"
+						{
+							"Installed"		"0"
+							"Updating"		"0"
+							"Running"		"0"
+							"name"		"Dota 2"
+						}
+						"228980"
+						{
+							"Updating"		"0"
+							"Installed"		"1"
+							"Running"		"0"
+						}
+					}
+				}
+			}
+		}
+	}
+}

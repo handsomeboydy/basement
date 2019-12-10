@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-fehbg --bg-fill '/home/alex/.config/variety/wallpaper/wallpaper-clock-ce76b5e358478a90a6114312d9bbc662.jpg' 

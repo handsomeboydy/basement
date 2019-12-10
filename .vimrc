@@ -70,7 +70,7 @@ noremap N I
 map s <nop>
 map W :w!<CR>
 map Q :q<CR>
-map R :source $MYVIMRC<CR>
+map C :source $MYVIMRC<CR>
 map ; :
 
 map sl :set splitright<CR>:vsplit<CR>
@@ -197,6 +197,44 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Unknown"   : "?"
     \ }
 
+" Compile function
+map r :call CompileRunGcc()<CR>
+func! CompileRunGcc()
+  exec "w"
+  if &filetype == 'c'
+    silent! exec "!clear"
+    exec "!g++ % -o %<"
+    silent! exec "!clear"
+    exec "! ./%<"
+  elseif &filetype == 'cpp'
+    exec "!g++ % -o %<"
+    exec "!time ./%<"
+  elseif &filetype == 'java'
+    exec "!javac %"
+    exec "!time java %<"
+  elseif &filetype == 'sh'
+    :!time bash %
+  elseif &filetype == 'python'
+    silent! exec "!clear"
+    exec "!python3 %"
+  elseif &filetype == 'html'
+    exec "!firefox % &"
+  elseif &filetype == 'markdown'
+    exec "MarkdownPreview"
+  elseif &filetype == 'vimwiki'
+    exec "MarkdownPreview"
+  endif
+endfunc
+
+map R :call CompileBuildrrr()<CR>
+func! CompileBuildrrr()
+  exec "w"
+  if &filetype == 'vim'
+    exec "source $MYVIMRC"
+  elseif &filetype == 'markdown'
+    exec "echo"
+  endif
+endfunc
 
 " ===
 " === You Complete ME

@@ -1,0 +1,44 @@
+[2019-10-05 12:04:54.741] [sharedprocess] [info] main {"machineId":"adcb721815bf62663d04e9ec563b14a4c951b2f783e50eba22b72a8fe42416e5"}
+[2019-10-05 12:05:34.752] [sharedprocess] [info] Starting to clean up unused language packs.
+[2019-10-05 12:19:32.068] [sharedprocess] [info] Installing extension: ms-python.anaconda-extension-pack
+[2019-10-05 12:19:33.826] [sharedprocess] [info] Downloaded extension: ms-python.anaconda-extension-pack /tmp/31d1f092-6a64-4905-8589-84d68073bc3d
+[2019-10-05 12:19:33.905] [sharedprocess] [info] Extracted extension to /home/alex/.vscode/extensions/.ms-python.anaconda-extension-pack-1.0.1: ms-python.anaconda-extension-pack
+[2019-10-05 12:19:33.906] [sharedprocess] [info] Renamed to /home/alex/.vscode/extensions/ms-python.anaconda-extension-pack-1.0.1
+[2019-10-05 12:19:33.910] [sharedprocess] [info] Installation completed. ms-python.anaconda-extension-pack
+[2019-10-05 12:19:35.245] [sharedprocess] [info] Installing extension: redhat.vscode-yaml
+[2019-10-05 12:19:38.460] [sharedprocess] [info] Downloaded extension: redhat.vscode-yaml /tmp/01c13ce8-f32b-47de-af52-b8629fab406f
+[2019-10-05 12:19:43.645] [sharedprocess] [info] Extracted extension to /home/alex/.vscode/extensions/.redhat.vscode-yaml-0.5.3: redhat.vscode-yaml
+[2019-10-05 12:19:43.646] [sharedprocess] [info] Renamed to /home/alex/.vscode/extensions/redhat.vscode-yaml-0.5.3
+[2019-10-05 12:19:43.651] [sharedprocess] [info] Installation completed. redhat.vscode-yaml
+[2019-10-05 12:19:43.666] [sharedprocess] [info] Extensions installed successfully: redhat.vscode-yaml
+[2019-10-05 12:19:43.669] [sharedprocess] [info] Extensions installed successfully: ms-python.anaconda-extension-pack
+[2019-10-05 12:20:05.291] [sharedprocess] [info] Installing extension: streetsidesoftware.code-spell-checker
+[2019-10-05 12:20:07.530] [sharedprocess] [info] Downloaded extension: streetsidesoftware.code-spell-checker /tmp/584cb90f-17de-4ced-9ab8-2d8fc4ba53ba
+[2019-10-05 12:20:14.247] [sharedprocess] [info] Extracted extension to /home/alex/.vscode/extensions/.streetsidesoftware.code-spell-checker-1.7.18: streetsidesoftware.code-spell-checker
+[2019-10-05 12:20:14.247] [sharedprocess] [info] Renamed to /home/alex/.vscode/extensions/streetsidesoftware.code-spell-checker-1.7.18
+[2019-10-05 12:20:14.252] [sharedprocess] [info] Installation completed. streetsidesoftware.code-spell-checker
+[2019-10-05 12:20:14.269] [sharedprocess] [info] Extensions installed successfully: streetsidesoftware.code-spell-checker
+[2019-10-05 12:20:34.139] [sharedprocess] [info] Installing extension: spywhere.guides
+[2019-10-05 12:20:35.255] [sharedprocess] [info] Downloaded extension: spywhere.guides /tmp/2a6accc6-143f-4ffb-a9e3-64d937183e18
+[2019-10-05 12:20:36.981] [sharedprocess] [info] Extracted extension to /home/alex/.vscode/extensions/.spywhere.guides-0.9.3: spywhere.guides
+[2019-10-05 12:20:36.981] [sharedprocess] [info] Renamed to /home/alex/.vscode/extensions/spywhere.guides-0.9.3
+[2019-10-05 12:20:36.988] [sharedprocess] [info] Installation completed. spywhere.guides
+[2019-10-05 12:20:37.000] [sharedprocess] [info] Extensions installed successfully: spywhere.guides
+[2019-10-05 12:21:03.904] [sharedprocess] [info] Installing extension: shan.code-settings-sync
+[2019-10-05 12:21:05.663] [sharedprocess] [info] Downloaded extension: shan.code-settings-sync /tmp/2861be8e-9a6c-4f29-a0c2-f79ea7c559df
+[2019-10-05 12:21:06.008] [sharedprocess] [info] Extracted extension to /home/alex/.vscode/extensions/.shan.code-settings-sync-3.4.3: shan.code-settings-sync
+[2019-10-05 12:21:06.008] [sharedprocess] [info] Renamed to /home/alex/.vscode/extensions/shan.code-settings-sync-3.4.3
+[2019-10-05 12:21:06.015] [sharedprocess] [info] Installation completed. shan.code-settings-sync
+[2019-10-05 12:21:06.026] [sharedprocess] [info] Extensions installed successfully: shan.code-settings-sync
+[2019-10-05 12:21:34.908] [sharedprocess] [info] Installing extension: robbowen.synthwave-vscode
+[2019-10-05 12:21:36.243] [sharedprocess] [info] Downloaded extension: robbowen.synthwave-vscode /tmp/e4a2b21e-d97e-4412-ac60-20d0670f38c7
+[2019-10-05 12:21:36.341] [sharedprocess] [info] Extracted extension to /home/alex/.vscode/extensions/.robbowen.synthwave-vscode-0.0.7: robbowen.synthwave-vscode
+[2019-10-05 12:21:36.342] [sharedprocess] [info] Renamed to /home/alex/.vscode/extensions/robbowen.synthwave-vscode-0.0.7
+[2019-10-05 12:21:36.345] [sharedprocess] [info] Installation completed. robbowen.synthwave-vscode
+[2019-10-05 12:21:36.387] [sharedprocess] [info] Extensions installed successfully: robbowen.synthwave-vscode
+[2019-10-05 12:22:03.976] [sharedprocess] [info] Installing extension: obkoro1.korofileheader
+[2019-10-05 12:22:10.180] [sharedprocess] [info] Downloaded extension: obkoro1.korofileheader /tmp/c568b3b2-2faa-428a-aa8b-79441f2d14d7
+[2019-10-05 12:22:11.778] [sharedprocess] [info] Extracted extension to /home/alex/.vscode/extensions/.obkoro1.korofileheader-4.1.4: obkoro1.korofileheader
+[2019-10-05 12:22:11.778] [sharedprocess] [info] Renamed to /home/alex/.vscode/extensions/obkoro1.korofileheader-4.1.4
+[2019-10-05 12:22:11.782] [sharedprocess] [info] Installation completed. obkoro1.korofileheader
+[2019-10-05 12:22:11.793] [sharedprocess] [info] Extensions installed successfully: obkoro1.korofileheader

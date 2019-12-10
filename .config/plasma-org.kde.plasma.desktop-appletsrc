@@ -113,11 +113,12 @@ PreloadWeight=0
 [Containments][35][General]
 ToolBoxButtonState=topright
 ToolBoxButtonX=1892
-positions=1,17,desktop:/Music,0,0,desktop:/steam.desktop,0,7,desktop:/Videos,0,6,desktop:/Pictures,0,5,desktop:/Downloads,0,4,desktop:/chromium.desktop,0,8,desktop:/Github,0,3,desktop:/Desktop,0,2,desktop:/Documents,0,1
+positions=1,17,desktop:/Music,0,4,desktop:/Pictures,0,5,desktop:/Videos,0,6,desktop:/1.html,0,7,desktop:/Desktop,0,0,desktop:/Documents,0,1,desktop:/Downloads,0,2,desktop:/Github,0,3,desktop:/stanfordnlp_resources,0,9
+previews=false
 sortMode=-1
 
 [Containments][35][Wallpaper][org.kde.image][General]
-Image=file:///home/alex/.config/variety/wallpaper/wallpaper-clock-8fd5c25b17315a0976f76bcb2318afa1.jpg
+Image=file:///home/alex/.config/variety/wallpaper/wallpaper-clock-086eb3d328ca2534c9ddacaa47ba2e00.jpg
 
 [Containments][8]
 activityId=
@@ -213,5 +214,5 @@ extraItems=org.kde.plasma.printmanager,org.kde.plasma.mediacontroller,org.kde.pl
 knownItems=org.kde.plasma.printmanager,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.notifications,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.kdeconnect,org.kde.plasma.keyboardindicator,org.kde.plasma.battery,org.kde.plasma.volume
 
 [ScreenMapping]
-itemsOnDisabledScreens=0,16,desktop:/Desktop,desktop:/下载,desktop:/Github,desktop:/桌面,desktop:/Documents,desktop:/file:⁄⁄⁄home⁄alex.⁄sdf,desktop:/Music,desktop:/steam.desktop,desktop:/Videos,desktop:/chromium.desktop,desktop:/音乐,desktop:/Module,desktop:/file:⁄⁄⁄home⁄alex.⁄.sdf,desktop:/Downloads,desktop:/.directory,desktop:/Pictures
-screenMapping=desktop:/Desktop,0,desktop:/下载,0,desktop:/Github,0,desktop:/桌面,0,desktop:/Documents,0,desktop:/file:⁄⁄⁄home⁄alex.⁄sdf,0,file:///home/alex/file:⁄⁄⁄home⁄alex⁄sdf,0,desktop:/Music,0,desktop:/steam.desktop,0,desktop:/Videos,0,desktop:/chromium.desktop,0,desktop:/音乐,0,desktop:/Module,0,desktop:/file:⁄⁄⁄home⁄alex.⁄.sdf,0,desktop:/Downloads,0,desktop:/.directory,0,desktop:/Pictures,0
+itemsOnDisabledScreens=0,26,desktop:/下载,desktop:/steam.desktop,desktop:/dead.letter,desktop:/chromium.desktop,desktop:/Pictures,desktop:/file:⁄⁄⁄home⁄alex.⁄sdf,desktop:/2.c,desktop:/Documents,desktop:/Downloads,desktop:/Music,desktop:/problems and solutions.md,desktop:/Github,desktop:/桌面,desktop:/stanfordnlp_resources,desktop:/2,desktop:/.directory,desktop:/1,desktop:/1.txt,desktop:/10-13.py,desktop:/1.c,desktop:/音乐,desktop:/Module,desktop:/Videos,desktop:/1.html,desktop:/file:⁄⁄⁄home⁄alex.⁄.sdf,desktop:/Desktop
+screenMapping=desktop:/下载,0,desktop:/steam.desktop,0,desktop:/dead.letter,0,desktop:/chromium.desktop,0,desktop:/Pictures,0,desktop:/file:⁄⁄⁄home⁄alex.⁄sdf,0,desktop:/2.c,0,desktop:/Documents,0,file:///home/alex/file:⁄⁄⁄home⁄alex⁄sdf,0,desktop:/Downloads,0,desktop:/Music,0,desktop:/problems and solutions.md,0,desktop:/Github,0,desktop:/桌面,0,desktop:/stanfordnlp_resources,0,desktop:/2,0,desktop:/.directory,0,desktop:/1,0,desktop:/1.txt,0,desktop:/10-13.py,0,desktop:/1.c,0,desktop:/音乐,0,desktop:/Module,0,desktop:/Videos,0,desktop:/1.html,0,desktop:/file:⁄⁄⁄home⁄alex.⁄.sdf,0,desktop:/Desktop,0

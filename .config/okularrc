@@ -1,14 +1,29 @@
 [Desktop Entry]
 FullScreen=false
+shouldShowMenuBarComingFromFullScreen=false
+shouldShowToolBarComingFromFullScreen=false
 
 [MainWindow]
-Height 1080=525
-State=AAAA/wAAAAD9AAAAAAAAAoAAAAHHAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+Height 1080=1032
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAQ4AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
-Width 1920=640
+Width 1920=946
 
 [Recent Files]
 File1[$e]=$HOME/Github/JOJO-/Downloads/md文件语法.md
 File2[$e]=$HOME/Github/JOJO-/Documents/IELTS/IELTSwords.md
+File3[$e]=$HOME/Documents/基于波形相似度分析的直流输电线路故障测距_李斌.pdf
+File4[$e]=/usr/share/doc/manjaro/Beginner_User_Guide.pdf
+File5[$e]=$HOME/Documents/交直流电力系统仿真技术－欧开健(1).pdf
+File6[$e]=$HOME/Documents/国庆文献/06691956.pdf
+File7[$e]=$HOME/Documents/国庆文献/06824228.pdf
+File8[$e]=$HOME/Documents/高压直流输电工程技术－赵畹君(1).pdf
 Name1[$e]=md文件语法.md
 Name2[$e]=IELTSwords.md
+Name3[$e]=基于波形相似度分析的直流输电线路故障测距_李斌.pdf
+Name4[$e]=Beginner_User_Guide.pdf
+Name5[$e]=交直流电力系统仿真技术－欧开健(1).pdf
+Name6[$e]=06691956.pdf
+Name7[$e]=06824228.pdf
+Name8[$e]=高压直流输电工程技术－赵畹君(1).pdf

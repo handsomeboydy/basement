@@ -1,5 +1,11 @@
 [Favorites-org.kde.plasma.kickoff.favorites.instance-2-f35d5ecc-e2e6-489a-94ce-fdcef27a9185]
-ordering=firefox.desktop,qupzilla.desktop,org.kde.dolphin.desktop,org.kde.konversation.desktop,libreoffice-writer.desktop,cantata.desktop,kde4-digikam.desktop,org.kde.konsole.desktop,octopi.desktop,systemsettings.desktop
+ordering=applications:firefox.desktop,applications:org.kde.dolphin.desktop,applications:org.kde.konversation.desktop,applications:libreoffice-writer.desktop,applications:org.kde.konsole.desktop,applications:octopi.desktop,applications:systemsettings.desktop,preferred://browser,applications:org.kde.kate.desktop
 
 [Favorites-org.kde.plasma.kickoff.favorites.instance-2-global]
-ordering=firefox.desktop,qupzilla.desktop,org.kde.dolphin.desktop,org.kde.konversation.desktop,libreoffice-writer.desktop,cantata.desktop,kde4-digikam.desktop,org.kde.konsole.desktop,octopi.desktop,systemsettings.desktop
+ordering=applications:firefox.desktop,applications:org.kde.dolphin.desktop,applications:org.kde.konversation.desktop,applications:libreoffice-writer.desktop,applications:org.kde.konsole.desktop,applications:octopi.desktop,applications:systemsettings.desktop,preferred://browser,applications:org.kde.kate.desktop
+
+[Favorites-org.kde.plasma.kickoff.favorites.instance-47-f35d5ecc-e2e6-489a-94ce-fdcef27a9185]
+ordering=preferred://browser,kontact.desktop,systemsettings.desktop,org.kde.dolphin.desktop,ktp-contactlist.desktop,org.kde.kate.desktop,org.kde.discover.desktop
+
+[Favorites-org.kde.plasma.kickoff.favorites.instance-47-global]
+ordering=preferred://browser,kontact.desktop,systemsettings.desktop,org.kde.dolphin.desktop,ktp-contactlist.desktop,org.kde.kate.desktop,org.kde.discover.desktop

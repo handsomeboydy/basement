@@ -1,3 +1,10 @@
+[Containments][46][General]
+AppletOrder=47;48;49;50;51;53
+
+[Containments][52][General]
+extraItems=org.kde.plasma.printmanager,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.notifications,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.kdeconnect,org.kde.plasma.keyboardindicator,org.kde.plasma.battery,org.kde.plasma.volume
+knownItems=org.kde.plasma.printmanager,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.notifications,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.kdeconnect,org.kde.plasma.keyboardindicator,org.kde.plasma.battery,org.kde.plasma.volume
+
 [KPropertiesDialog]
 Height 1080=428
 Width 1920=358
@@ -47,6 +54,12 @@ thickness=45
 
 [PlasmaViews][Panel 1][Horizontal864]
 thickness=45
+
+[PlasmaViews][Panel 46][Horizontal1920]
+thickness=39
+
+[PlasmaViews][Panel 64][Vertical1080]
+thickness=36
 
 [ScreenConnectors]
 0=eDP1

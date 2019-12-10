@@ -100,6 +100,12 @@ Word Completion=true
 Word Completion Minimal Word Length=3
 Word Completion Remove Tail=true
 
+[MainWindow]
+Height 1080=0
+State=AAAA/wAAAAD9AAAAAAAAAAD////6AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1920=0
+
 [filetree]
 editShade=211,190,222
 listMode=false
