@@ -1,5 +1,8 @@
+[$Version]
+update_info=spectacle_shortcuts.upd:spectacle-migrate-shortcuts
+
 [Data]
-DataCount=4
+DataCount=3
 
 [Data_1]
 Comment=KMenuEdit Global Shortcuts
@@ -14,7 +17,7 @@ Comment=
 ConditionsCount=0
 
 [Data_1_1]
-Comment=注释
+Comment=评论
 Enabled=true
 Name=搜索
 Type=SIMPLE_ACTION_DATA
@@ -31,7 +34,7 @@ Comment=
 ConditionsCount=0
 
 [Data_1_1Triggers]
-Comment=简易_动作
+Comment=简单动作
 TriggersCount=1
 
 [Data_1_1Triggers0]
@@ -63,7 +66,7 @@ TriggersCount=1
 [Data_1_2Triggers0]
 Key=Ctrl+Alt+T
 Type=SHORTCUT
-Uuid={e10d9829-f0fe-4000-9b15-44e155188f28}
+Uuid={e251f1ea-6e32-4ca5-baea-90380a2ee5a7}
 
 [Data_2]
 Comment=基本 Konqueror 手势
@@ -99,7 +102,7 @@ WindowTypes=1
 [Data_2_1]
 Comment=按下，左移，释放。
 Enabled=true
-Name=后退
+Name=背面
 Type=SIMPLE_ACTION_DATA
 
 [Data_2_10]
@@ -131,7 +134,7 @@ Type=GESTURE
 [Data_2_11]
 Comment=进入到 URL/目录结构中的上一层。\nMozilla 风格：按下，向上移动，向左移动，向上移动，释放。
 Enabled=true
-Name=向上
+Name=上箭头
 Type=SIMPLE_ACTION_DATA
 
 [Data_2_11Actions]
@@ -183,7 +186,7 @@ Type=GESTURE
 [Data_2_13]
 Comment=按下，向上移动，向右移动，释放。
 Enabled=true
-Name=激活下一个标签页
+Name=激活下一标签页
 Type=SIMPLE_ACTION_DATA
 
 [Data_2_13Actions]
@@ -209,7 +212,7 @@ Type=GESTURE
 [Data_2_14]
 Comment=按下，向上移动，向左移动，释放。
 Enabled=true
-Name=激活上一个标签页
+Name=激活上一标签页
 Type=SIMPLE_ACTION_DATA
 
 [Data_2_14Actions]
@@ -255,7 +258,7 @@ Type=GESTURE
 [Data_2_2]
 Comment=按下，向下移动，向上移动，向下移动，释放。
 Enabled=true
-Name=复制标签页
+Name=复制标签
 Type=SIMPLE_ACTION_DATA
 
 [Data_2_2Actions]
@@ -307,7 +310,7 @@ Type=GESTURE
 [Data_2_4]
 Comment=按下，向右移动，释放。
 Enabled=true
-Name=前进
+Name=转发
 Type=SIMPLE_ACTION_DATA
 
 [Data_2_4Actions]
@@ -333,7 +336,7 @@ Type=GESTURE
 [Data_2_5]
 Comment=按下，向下移动，向上移动一半，向右移动，向下移动，释放。\n(就像绘制一个小写的‘h’。)
 Enabled=true
-Name=主文件夹
+Name=Home
 Type=SIMPLE_ACTION_DATA
 
 [Data_2_5Actions]
@@ -419,7 +422,7 @@ Type=GESTURE
 [Data_2_8]
 Comment=按下，向下移动，释放。
 Enabled=true
-Name=新建窗口
+Name=新窗口
 Type=SIMPLE_ACTION_DATA
 
 [Data_2_8Actions]
@@ -445,7 +448,7 @@ Type=GESTURE
 [Data_2_9]
 Comment=按下，向上移动，向下移动，释放。
 Enabled=true
-Name=重新加载
+Name=重新载入
 Type=SIMPLE_ACTION_DATA
 
 [Data_2_9Actions]
@@ -473,7 +476,7 @@ Comment=这个组包含很多个描述 KHotkeys 的绝大多数特性的实例�
 DataCount=8
 Enabled=false
 ImportId=kde32b1
-Name=实例
+Name=示例
 SystemGroup=0
 Type=ACTION_DATA_GROUP
 
@@ -513,13 +516,13 @@ Comment=
 ConditionsCount=0
 
 [Data_3_1Triggers]
-Comment=简易_动作
+Comment=简单动作
 TriggersCount=1
 
 [Data_3_1Triggers0]
 Key=Ctrl+Alt+I
 Type=SHORTCUT
-Uuid={422bd578-ee6a-41e0-9577-63d7e479908b}
+Uuid={9c6dd8bc-49c8-4992-8f78-ad5912e7ae89}
 
 [Data_3_2]
 Comment=在按下 Alt+Ctrl+H 之后，会模拟您在键盘上输入“Hello”。如果您懒得输入一些像“unsigned”之类的文字，这类动作就会非常有用。输入中的每次按键都会以冒号“:”间隔。注意这里的按键是指真正的按键，所以您必须定义您实际所要按的键。在下面表格中，左面一栏显示的是输入，右面一栏显示的是要按的键。\n\n“enter”(换行)                Enter 或 Return\na(小写a)                          A\nA(大写A)                       Shift+A\n:(冒号)                                  Shift+;\n' '(空格)                              Space
@@ -540,13 +543,13 @@ Comment=
 ConditionsCount=0
 
 [Data_3_2Triggers]
-Comment=简易_动作
+Comment=简单动作
 TriggersCount=1
 
 [Data_3_2Triggers0]
 Key=Ctrl+Alt+H
 Type=SHORTCUT
-Uuid={5225003b-0555-4c54-9024-7ce05943e7fa}
+Uuid={053c7d8f-c853-47cd-b76a-42e223f3399f}
 
 [Data_3_3]
 Comment=这个动作运行 Konsole，在按下 Ctrl+Alt+T 之后。
@@ -566,13 +569,13 @@ Comment=
 ConditionsCount=0
 
 [Data_3_3Triggers]
-Comment=简易_动作
+Comment=简单动作
 TriggersCount=1
 
 [Data_3_3Triggers0]
 Key=Ctrl+Alt+T
 Type=SHORTCUT
-Uuid={f224dd6f-6d1c-4a54-b164-e8a62409e9d1}
+Uuid={0bae8a7a-bfc0-400f-9333-410660bb8da1}
 
 [Data_3_4]
 Comment=请先阅读“输入 Hello”动作的注释。\n\nCtrl+F4 这个组合键在 Qt 设计器中是用于关闭窗口，而在 KDE 中却是转到第四个虚拟桌面的快捷键，因此在 Qt 设计器中此组合键是无法使用的。另外，Qt 设计器不使用 KDE 标准的 Ctrl+W 键来关闭窗口。\n\n要解决这个问题，可以当活动窗口为 Qt 设计器时，把 Ctrl+W 重映射到 Ctrl+F4 组合键上，这样每次在 Qt 设计器窗口中按下 Ctrl+W 时，实际发送到程序的键位将被 Ctrl+F4 替代。在其它程序中，Ctrl+W 的作用不会受到影响。\n\n现在我们需要指定三样东西：一个针对“Ctrl+W”快捷键的新触发器，发送 Ctrl+F4 键位时新的键盘输入动作，以及确定活动窗口是否是 Qt 设计器的新条件。\nQt 设计器的窗口标题似乎总是“Qt Designer by Trolltech”，因此可以通过检查活动窗口标题是否符合此字符串的方式来指定条件。
@@ -617,7 +620,7 @@ TriggersCount=1
 [Data_3_4Triggers0]
 Key=Ctrl+W
 Type=SHORTCUT
-Uuid={ae424b28-39d3-49cb-9ead-232ddbb497ba}
+Uuid={8efd5f22-e555-48bf-b6f1-f917f48aa3e3}
 
 [Data_3_5]
 Comment=通过按下 Alt+Ctrl+W，将会执行一个 D-Bus 调用显示 minicli。您可以使用任意的 DCOP 调用，就像您在命令行下使用“qdbus”工具一样。
@@ -640,13 +643,13 @@ Comment=
 ConditionsCount=0
 
 [Data_3_5Triggers]
-Comment=简易_动作
+Comment=简单动作
 TriggersCount=1
 
 [Data_3_5Triggers0]
 Key=Ctrl+Alt+W
 Type=SHORTCUT
-Uuid={14f2b177-3681-4a82-8d7d-67f13d146e07}
+Uuid={2cd03d21-450b-4e5b-92de-b2b9ca288281}
 
 [Data_3_6]
 Comment=请先阅读动作“输入‘Hello’”的注释。\n\n就如同“输入‘Hello’”动作，这个动作模拟一个键盘输入，特别是在按下 Ctrl+Alt+B 之后，它会发送 B 到 XMMS(在 XMMS 中的 B 就是跳到下一首歌)。这个“发送到指定窗口”选项被选中，并且指定窗口类别为包含“XMMS_Player”；这样就会使这个输入总是被发送到这个窗口。这样，您甚至可以在一个不同的虚拟桌面上控制 XMMS。\n\n(运行“xprop”并且点击 XMMS 窗口，搜索 WM_CLASS 可以看到“XMMS_Player”)。
@@ -682,16 +685,16 @@ Comment=
 ConditionsCount=0
 
 [Data_3_6Triggers]
-Comment=简易_动作
+Comment=简单动作
 TriggersCount=1
 
 [Data_3_6Triggers0]
 Key=Ctrl+Alt+B
 Type=SHORTCUT
-Uuid={0ca2aa07-a70a-4375-8c73-bdbfd061db99}
+Uuid={835695e6-67bc-4766-8300-2b2455c5fcc5}
 
 [Data_3_7]
-Comment=KDE 3.1 中的 Konqi 有标签页，现在您还可以使用手势。\n\n只需要按住鼠标中键并且开始绘制一个手势，在您完成之后，释放鼠标按键。如果您只需要粘贴这个选择，它还可以工作，只需要简单地点击鼠标中键。(您可以改变全局设置中的鼠标按键)。\n\n现在，有如下可用的手势：\n向右移动然后回到左面 - 前进(Alt+Right)\n向左移动然后回到右面 - 后退(Alt+Left)\n向上移动然后回到下面 - 向上(Alt+Up)\n逆时针画圈 - 重新加载(F5)\n(等我找到 Opera 和 Mozilla 中更多的手势，我将会把它们添加进来并且保证它们是一致的。或者如果您也可以自己参与，请把您的 khotkeysrc 发给我。)\n\n这些手势形状(一些对话框来自于 KGesture，谢谢 Mike Pilone)可以在配置对话框中输入。您还可以看一下小键盘，它可以帮助您，手势被识别为一个 3x3 的网格区域，标识为 1 至 9。\n\n注意您必须准确地执行手势来触发动作。因此，它允许多个手势进入一个动作。您必须试图避免使用复杂的手势，例如您改变鼠标移动方向的次数超过一次(例如 45654 或者 74123 很简单就可以执行，但是 1236987 也许就太难了)。\n\n所有手势的条件都定义在这个组中。这些手势只有在激活窗口为 Konqueror(类别包含“konqueror”)时才会有效。
+Comment=KDE 3.1 中的 Konqi 有标签页，现在您还可以使用手势。\n\n只需要按住鼠标中键并且开始绘制一个手势，在您完成之后，释放鼠标按键。如果您只需要粘贴这个选择，它还可以工作，只需要简单地点击鼠标中键。(您可以改变全局设置中的鼠标按键)。\n\n现在，有如下可用的手势：\n向右移动然后回到左面 - 前进(Alt+Right)\n向左移动然后回到右面 - 后退(Alt+Left)\n向上移动然后回到下面 - 向上(Alt+Up)\n逆时针画圈 - 重新加载(F5)\n(等我找到 Opera 和 Mozilla 中更多的手势，我将会把它们添加进来并且保证它们是一致的。或者如果您也可以自己参与，请把您的 khotkeysrc 发给我。)\n\n这些手势形状(一些对话框来自于 KGesture，谢谢 Mike Pilone) 可以在配置对话框中输入。您还可以看一下小键盘，它可以帮助您，手势被识别为一个 3x3 的网格区域，标识为 1 至 9。\n\n注意您必须准确地执行手势来触发动作。因此，它允许多个手势进入一个动作。您必须试图避免使用复杂的手势，例如您改变鼠标移动方向的次数超过一次(例如 45654 或者 74123 很简单就可以执行，但是 1236987 也许就太难了)。\n\n所有手势的条件都定义在这个组中。这些手势只有在激活窗口为 Konqueror(类别包含“konqueror”) 时才会有效。
 DataCount=4
 Enabled=false
 Name=Konqi 手势
@@ -723,7 +726,7 @@ WindowTypes=33
 [Data_3_7_1]
 Comment=
 Enabled=false
-Name=后退
+Name=背面
 Type=SIMPLE_ACTION_DATA
 
 [Data_3_7_1Actions]
@@ -757,7 +760,7 @@ Type=GESTURE
 [Data_3_7_2]
 Comment=
 Enabled=false
-Name=前进
+Name=转发
 Type=SIMPLE_ACTION_DATA
 
 [Data_3_7_2Actions]
@@ -791,7 +794,7 @@ Type=GESTURE
 [Data_3_7_3]
 Comment=
 Enabled=false
-Name=向上
+Name=上箭头
 Type=SIMPLE_ACTION_DATA
 
 [Data_3_7_3Actions]
@@ -825,7 +828,7 @@ Type=GESTURE
 [Data_3_7_4]
 Comment=
 Enabled=false
-Name=重新加载
+Name=重新载入
 Type=SIMPLE_ACTION_DATA
 
 [Data_3_7_4Actions]
@@ -874,142 +877,13 @@ Comment=
 ConditionsCount=0
 
 [Data_3_8Triggers]
-Comment=简易_动作
+Comment=简单动作
 TriggersCount=1
 
 [Data_3_8Triggers0]
 Key=Meta+E
 Type=SHORTCUT
-Uuid={44f0b219-c0a0-4119-8197-62f972e9be9e}
-
-[Data_4]
-Comment=截图快捷键
-DataCount=4
-Enabled=true
-ImportId=spectacle
-Name=截图
-SystemGroup=0
-Type=ACTION_DATA_GROUP
-
-[Data_4Conditions]
-Comment=
-ConditionsCount=0
-
-[Data_4_1]
-Comment=启动截图工具并显示界面
-Enabled=true
-Name=启动截图工具
-Type=SIMPLE_ACTION_DATA
-
-[Data_4_1Actions]
-ActionsCount=1
-
-[Data_4_1Actions0]
-Arguments=
-Call=StartAgent
-RemoteApp=org.kde.Spectacle
-RemoteObj=/
-Type=DBUS
-
-[Data_4_1Conditions]
-Comment=
-ConditionsCount=0
-
-[Data_4_1Triggers]
-Comment=简单动作
-TriggersCount=1
-
-[Data_4_1Triggers0]
-Key=Print
-Type=SHORTCUT
-Uuid={d0ed17ba-b356-4c88-b0c1-f8844f46135b}
-
-[Data_4_2]
-Comment=对全屏 (所有显示器) 截图并保存
-Enabled=true
-Name=对全屏截图
-Type=SIMPLE_ACTION_DATA
-
-[Data_4_2Actions]
-ActionsCount=1
-
-[Data_4_2Actions0]
-Arguments=false
-Call=FullScreen
-RemoteApp=org.kde.Spectacle
-RemoteObj=/
-Type=DBUS
-
-[Data_4_2Conditions]
-Comment=
-ConditionsCount=0
-
-[Data_4_2Triggers]
-Comment=简单动作
-TriggersCount=1
-
-[Data_4_2Triggers0]
-Key=Shift+Print
-Type=SHORTCUT
-Uuid={475a7fb1-3d3f-45dc-9e89-d2d2bf7f78ab}
-
-[Data_4_3]
-Comment=对当前活动窗口截图并保存
-Enabled=true
-Name=对活动窗口截图
-Type=SIMPLE_ACTION_DATA
-
-[Data_4_3Actions]
-ActionsCount=1
-
-[Data_4_3Actions0]
-Arguments=true false
-Call=ActiveWindow
-RemoteApp=org.kde.Spectacle
-RemoteObj=/
-Type=DBUS
-
-[Data_4_3Conditions]
-Comment=
-ConditionsCount=0
-
-[Data_4_3Triggers]
-Comment=简单动作
-TriggersCount=1
-
-[Data_4_3Triggers0]
-Key=Meta+Print
-Type=SHORTCUT
-Uuid={9abed1a0-6678-46c9-be68-add267984942}
-
-[Data_4_4]
-Comment=对指定矩形区域截图并保存
-Enabled=true
-Name=对矩形区域截图
-Type=SIMPLE_ACTION_DATA
-
-[Data_4_4Actions]
-ActionsCount=1
-
-[Data_4_4Actions0]
-Arguments=true
-Call=RectangularRegion
-RemoteApp=org.kde.Spectacle
-RemoteObj=/
-Type=DBUS
-
-[Data_4_4Conditions]
-Comment=
-ConditionsCount=0
-
-[Data_4_4Triggers]
-Comment=简单动作
-TriggersCount=1
-
-[Data_4_4Triggers0]
-Key=Meta+Shift+Print
-Type=SHORTCUT
-Uuid={a0aa15f2-2501-483c-8163-4ed4f3e92054}
+Uuid={97a13737-c6bd-4ec4-bccd-6dcd8c558320}
 
 [Directories]
 dir_pixmap[$d]
@@ -1048,7 +922,7 @@ widgetStyle[$d]
 Breadcrumb Navigation[$d]
 
 [Main]
-AlreadyImported=defaults,konqueror_gestures_kde321,konsole,kde32b1,spectacle
+AlreadyImported=defaults,konqueror_gestures_kde321,konsole,kde32b1
 Disabled=false
 Version=2
 

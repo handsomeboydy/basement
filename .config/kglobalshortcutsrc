@@ -1,8 +1,8 @@
 [ActivityManager]
 _k_friendly_name=活动管理器
-switch-to-activity-f35d5ecc-e2e6-489a-94ce-fdcef27a9185=none,none,切换到活动“默认”
 
 [KDE Keyboard Layout Switcher]
+Switch keyboard layout to 汉语=none,none,切换到键盘布局 汉语
 Switch to Next Keyboard Layout=Ctrl+Alt+K,none,切换到下一个键盘布局
 _k_friendly_name=KDE Daemon
 
@@ -23,12 +23,8 @@ display=Display\tMeta+P,Display\tMeta+P,切换显示器
 
 [khotkeys]
 _k_friendly_name=KDE Daemon
-{475a7fb1-3d3f-45dc-9e89-d2d2bf7f78ab}=Shift+Print,none,对全屏截图
-{9abed1a0-6678-46c9-be68-add267984942}=Meta+Print,none,对活动窗口截图
-{a0aa15f2-2501-483c-8163-4ed4f3e92054}=Meta+Shift+Print,none,对矩形区域截图
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=,none,搜索
-{d0ed17ba-b356-4c88-b0c1-f8844f46135b}=Print,none,启动截图工具
-{e10d9829-f0fe-4000-9b15-44e155188f28}=Ctrl+Alt+T,none,Launch Konsole
+{e251f1ea-6e32-4ca5-baea-90380a2ee5a7}=Ctrl+Alt+T,none,Launch Konsole
 
 [kmix]
 _k_friendly_name=音频音量
@@ -39,14 +35,14 @@ increase_volume=Volume Up,Volume Up,增大音量
 mic_mute=Microphone Mute,Microphone Mute,麦克风静音
 mute=Volume Mute,Volume Mute,静音
 
-[krunner]
-_k_friendly_name=运行命令
-run command=Alt+Space\tAlt+F2\tSearch,Alt+Space,运行命令
-run command on clipboard contents=Alt+Shift+F2,Alt+Shift+F2,用剪贴板内容运行命令
+[krunner.desktop]
+RunClipboard=Alt+Shift+F2,Alt+Shift+F2,在剪贴板内容上运行命令
+_k_friendly_name=KRunner
+_launch=Alt+Space\tAlt+F2\tMeta+Space\tSearch,Alt+Space\tAlt+F2\tMeta+Space\tSearch,KRunner
 
 [ksmserver]
 Halt Without Confirmation=Ctrl+Alt+Shift+PgDown,none,关机前不确认
-Lock Session=Ctrl+Alt+L\tScreensaver,Meta+L\tCtrl+Alt+L\tScreensaver,锁定会话
+Lock Session=Meta+L\tCtrl+Alt+L\tScreensaver,Meta+L\tCtrl+Alt+L\tScreensaver,锁定会话
 Log Out=Ctrl+Alt+Del,none,注销
 Log Out Without Confirmation=Ctrl+Alt+Shift+Del,none,注销前不确认
 Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp,none,重启前不确认
@@ -67,9 +63,8 @@ MoveZoomDown=none,none,将缩放区域向下移动
 MoveZoomLeft=none,none,将缩放区域向左移动
 MoveZoomRight=none,none,将缩放区域向右移动
 MoveZoomUp=none,none,将缩放区域向上移动
-Remove Window From Group=none,none,从分组中移除窗口
 Setup Window Shortcut=none,none,设置窗口快捷键
-Show Desktop=none,Meta+D,显示桌面
+Show Desktop=Meta+D,Meta+D,显示桌面
 ShowDesktopGrid=Ctrl+F8,Ctrl+F8,显示桌面网格
 Suspend Compositing=Alt+Shift+F12,Alt+Shift+F12,挂起混成器
 Switch One Desktop Down=none,none,切换到下面的桌面
@@ -95,8 +90,8 @@ Switch to Desktop 2=Ctrl+F2,Ctrl+F2,切换到桌面 2
 Switch to Desktop 20=none,none,切换到桌面 20
 Switch to Desktop 3=Ctrl+F3,Ctrl+F3,切换到桌面 3
 Switch to Desktop 4=Ctrl+F4,Ctrl+F4,切换到桌面 4
-Switch to Desktop 5=Ctrl+F5,none,切换到桌面 5
-Switch to Desktop 6=Ctrl+F6,none,切换到桌面 6
+Switch to Desktop 5=none,none,切换到桌面 5
+Switch to Desktop 6=none,none,切换到桌面 6
 Switch to Desktop 7=none,none,切换到桌面 7
 Switch to Desktop 8=none,none,切换到桌面 8
 Switch to Desktop 9=none,none,切换到桌面 9
@@ -112,19 +107,18 @@ Switch to Screen 4=none,none,切换到屏幕 4
 Switch to Screen 5=none,none,切换到屏幕 5
 Switch to Screen 6=none,none,切换到屏幕 6
 Switch to Screen 7=none,none,切换到屏幕 7
+Toggle Night Color=none,none,Toggle Night Color
 Toggle Window Raise/Lower=none,none,窗口置前或置后
 Walk Through Desktop List=none,none,遍历桌面列表
 Walk Through Desktop List (Reverse)=none,none,遍历桌面列表(反向)
 Walk Through Desktops=none,none,遍历桌面
 Walk Through Desktops (Reverse)=none,none,遍历桌面(反向)
-Walk Through Window Tabs=none,none,遍历窗口标签
-Walk Through Window Tabs (Reverse)=none,none,遍历窗口标签(反向)
-Walk Through Windows=Alt+Tab,none,遍历窗口
-Walk Through Windows (Reverse)=Alt+Shift+Backtab,none,遍历窗口(反向)
+Walk Through Windows=Alt+Tab,Alt+Tab,遍历窗口
+Walk Through Windows (Reverse)=Alt+Shift+Backtab,Alt+Shift+Backtab,遍历窗口(反向)
 Walk Through Windows Alternative=none,none,遍历窗口候选
 Walk Through Windows Alternative (Reverse)=none,none,遍历窗口候选(反向)
-Walk Through Windows of Current Application=Alt+`,none,遍历当前应用程序窗口
-Walk Through Windows of Current Application (Reverse)=Alt+~,none,遍历当前应用程序窗口(反向)
+Walk Through Windows of Current Application=Alt+`,Alt+`,遍历当前应用程序窗口
+Walk Through Windows of Current Application (Reverse)=Alt+~,Alt+~,遍历当前应用程序窗口(反向)
 Walk Through Windows of Current Application Alternative=none,none,遍历当前应用程序窗口候选
 Walk Through Windows of Current Application Alternative (Reverse)=none,none,遍历当前应用程序窗口候选(反向)
 Window Above Other Windows=none,none,让窗口常居顶端
@@ -200,14 +194,17 @@ view_actual_size=,Meta+0,实际大小(A)
 view_zoom_in=Meta+=,Meta+=,放大(I)
 view_zoom_out=Meta+-,Meta+-,缩小(O)
 
-[mediacontrol]
-_k_friendly_name=媒体控制器
-mediavolumedown=none,none,媒体音量下降
-mediavolumeup=none,none,媒体音量上升
-nextmedia=Media Next,Media Next,媒体播放下一首
-playpausemedia=Media Play,Media Play,播放/暂停媒体播放
-previousmedia=Media Previous,Media Previous,媒体播放上一首
-stopmedia=Media Stop,Media Stop,停止媒体播放
+[org.kde.dolphin.desktop]
+_k_friendly_name=Dolphin
+_launch=Meta+E,Meta+E,Dolphin
+
+[org.kde.spectacle.desktop]
+ActiveWindowScreenShot=Meta+Print,Meta+Print,截取活动窗口
+CurrentMonitorScreenShot=,,截取当前显示器
+FullScreenScreenShot=Shift+Print,Shift+Print,截取整个桌面
+RectangularRegionScreenShot=Meta+Shift+Print,Meta+Shift+Print,截取矩形区域
+_k_friendly_name=Spectacle
+_launch=Print,Print,Spectacle
 
 [org_kde_powerdevil]
 Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,降低键盘亮度
@@ -218,6 +215,7 @@ Increase Screen Brightness=Monitor Brightness Up,Monitor Brightness Up,提高屏
 PowerOff=Power Off,Power Off,关机
 Sleep=Sleep,Sleep,挂起
 Toggle Keyboard Backlight=Keyboard Light On/Off,Keyboard Light On/Off,切换键盘背光
+Turn Off Screen=none,none,关闭屏幕
 _k_friendly_name=电源管理
 
 [plasmashell]
@@ -232,7 +230,7 @@ activate task manager entry 6=Meta+6,Meta+6,激活任务管理器条目 6
 activate task manager entry 7=Meta+7,Meta+7,激活任务管理器条目 7
 activate task manager entry 8=Meta+8,Meta+8,激活任务管理器条目 8
 activate task manager entry 9=Meta+9,Meta+9,激活任务管理器条目 9
-activate widget 2=Alt+F1,none,激活 程序启动器 部件
+activate widget 3=Alt+F1,none,激活 程序启动器 部件
 clear-history=none,none,清除剪贴板历史(L)
 clipboard_action=Ctrl+Alt+X,Ctrl+Alt+X,启用剪贴板动作
 cycleNextAction=none,none,下一个历史项

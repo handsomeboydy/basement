@@ -1,5 +1,2 @@
 [General]
-history=al,st,nvi,n,as
-
-[PlasmaRunnerManager]
-LaunchCounts=1 shell_as,1 services_steam.desktop,2 services_nvidia-settings.desktop,5 services_alacritty.desktop
+history=chr,al,ranger,kill all vim,vim,l

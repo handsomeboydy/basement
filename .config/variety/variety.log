@@ -1,768 +1,1091 @@
-INFO: 2019-12-08 08:26:55,447: perform_upgrade() 'Last run version was 0.7.2 or earlier, current version is 0.7.2'
-INFO: 2019-12-08 08:26:55,625: process_command() 'Received command: []'
-INFO: 2019-12-08 08:26:55,626: load_banned() 'Missing or invalid banned URLs list, no URLs will be banned'
-INFO: 2019-12-08 08:26:55,697: load() 'Jumble loading'
-INFO: 2019-12-08 08:26:55,698: _walk_modules() 'Jumble loading module in __init__ from /usr/share/variety/plugins/__init__.py'
-INFO: 2019-12-08 08:26:55,699: _walk_modules() 'Jumble loading module in GoodreadsSource from /usr/share/variety/plugins/quotes/GoodreadsSource.py'
-INFO: 2019-12-08 08:26:55,712: load() 'Jumble found plugin class: <class 'GoodreadsSource.GoodreadsSource'>: {'name': 'Goodreads', 'description': '从 Goodreads.com 获取箴言', 'author': 'Peter Levi', 'version': '0.1'}'
-INFO: 2019-12-08 08:26:55,713: _walk_modules() 'Jumble loading module in QuotationsPageSource from /usr/share/variety/plugins/quotes/QuotationsPageSource.py'
-INFO: 2019-12-08 08:26:55,714: load() 'Jumble found plugin class: <class 'QuotationsPageSource.QuotationsPageSource'>: {'name': 'TheQuotationsPage.com', 'description': '从 QuotationsPage.com 获取箴言', 'author': 'Peter Levi', 'version': '0.1'}'
-INFO: 2019-12-08 08:26:55,715: _walk_modules() 'Jumble loading module in LocalFilesSource from /usr/share/variety/plugins/quotes/LocalFilesSource.py'
-INFO: 2019-12-08 08:26:55,716: load() 'Jumble found plugin class: <class 'LocalFilesSource.LocalFilesSource'>: {'name': 'Local text files', 'description': 'Displays quotes, defined in local text files.\nPut your own txt files in: ~/.config/variety/pluginconfig/quotes/.\nThe file format is:\n\nquote -- author\n.\nsecond quote -- another author\n.\netc...\n\nExample: http://rvelthuis.de/zips/quotes.txt', 'author': 'Peter Levi', 'version': '0.1'}'
-INFO: 2019-12-08 08:26:55,717: _walk_modules() 'Jumble loading module in __init__ from /usr/share/variety/plugins/quotes/__init__.py'
-INFO: 2019-12-08 08:26:55,718: _walk_modules() 'Jumble loading module in QuotesDaddySource from /usr/share/variety/plugins/quotes/QuotesDaddySource.py'
-INFO: 2019-12-08 08:26:55,719: load() 'Jumble found plugin class: <class 'QuotesDaddySource.QuotesDaddySource'>: {'name': 'QuotesDaddy', 'description': '从QuotesDaddy的每日箴言RSS订阅中中获取箴言。不支持按标签或作者搜索。', 'author': 'Peter Levi', 'version': '0.1'}'
-INFO: 2019-12-08 08:26:55,723: reload_config() 'Creating new downloader for type 6, location Random wallpapers from Desktoppr.co'
-INFO: 2019-12-08 08:26:55,723: reload_config() 'Creating new downloader for type 15, location Bing Photo of the Day'
-INFO: 2019-12-08 08:26:55,723: reload_config() 'Creating new downloader for type 16, location High-resolution photos from Unsplash.com'
-INFO: 2019-12-08 08:26:55,723: reload_config() 'Creating new downloader for type 8, location NASA's Astronomy Picture of the Day'
-INFO: 2019-12-08 08:26:55,724: reload_config() 'Creating new downloader for type 7, location user:www.flickr.com/photos/peter-levi/;user_id:93647178@N00;'
-INFO: 2019-12-08 08:26:55,724: log_options() 'Loaded options:'
-INFO: 2019-12-08 08:26:55,724: log_options() 'change_enabled = False'
-INFO: 2019-12-08 08:26:55,724: log_options() 'change_interval = 300'
-INFO: 2019-12-08 08:26:55,724: log_options() 'change_on_start = True'
-INFO: 2019-12-08 08:26:55,724: log_options() 'clipboard_enabled = False'
-INFO: 2019-12-08 08:26:55,724: log_options() 'clipboard_hosts = ['wallhaven.cc', 'wallpapers.net', 'flickr.com', 'imgur.com', 'deviantart.com', 'interfacelift.com', 'vladstudio.com', 'imageshack.us', 'deviantart.net', 'imageshack.com']'
-INFO: 2019-12-08 08:26:55,725: log_options() 'clipboard_use_whitelist = True'
-INFO: 2019-12-08 08:26:55,725: log_options() 'clock_date_font = Sans Bold 30'
-INFO: 2019-12-08 08:26:55,725: log_options() 'clock_enabled = True'
-INFO: 2019-12-08 08:26:55,725: log_options() 'clock_filter = -density 100 -font `fc-match -f '%{file[0]}' '%CLOCK_FONT_NAME'` -pointsize %CLOCK_FONT_SIZE -gravity SouthEast -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+108] '%H:%M' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+110] '%H:%M' -font `fc-match -f '%{file[0]}' '%DATE_FONT_NAME'` -pointsize %DATE_FONT_SIZE -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+58] '%A, %B %d' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+60] '%A, %B %d''
-INFO: 2019-12-08 08:26:55,725: log_options() 'clock_font = Sans Italic 140'
-INFO: 2019-12-08 08:26:55,725: log_options() 'configfile = /home/alex/.config/variety/variety.conf'
-INFO: 2019-12-08 08:26:55,725: log_options() 'copyto_enabled = False'
-INFO: 2019-12-08 08:26:55,725: log_options() 'copyto_folder = Default'
-INFO: 2019-12-08 08:26:55,725: log_options() 'desired_color = [160, 160, 160]'
-INFO: 2019-12-08 08:26:55,725: log_options() 'desired_color_enabled = False'
-INFO: 2019-12-08 08:26:55,725: log_options() 'download_enabled = True'
-INFO: 2019-12-08 08:26:55,725: log_options() 'download_folder = /home/alex/Pictures/mywallpapers'
-INFO: 2019-12-08 08:26:55,725: log_options() 'download_interval = 300'
-INFO: 2019-12-08 08:26:55,725: log_options() 'favorites_folder = /home/alex/.config/variety/Favorites'
-INFO: 2019-12-08 08:26:55,725: log_options() 'favorites_operations = [['Downloaded', 'Copy'], ['Fetched', 'Move'], ['Others', 'Copy']]'
-INFO: 2019-12-08 08:26:55,725: log_options() 'fetched_folder = /home/alex/.config/variety/Fetched'
-INFO: 2019-12-08 08:26:55,725: log_options() 'filters = [[False, 'Keep original', ''], [False, 'Grayscale', '-type Grayscale'], [False, 'Heavy blur', '-blur 120x40'], [False, 'Soft blur', '-blur 20x7'], [False, 'Oil painting', '-paint 8'], [False, 'Pencil sketch', '-colorspace gray \\( +clone -tile ~/.config/variety/pencil_tile.png -draw "color 0,0 reset" +clone +swap -compose color_dodge -composite \\) -fx \'u*.2+v*.8\''], [False, 'Pointilism', '-spread 10 -noise 3'], [False, 'Pixellate', '-scale 3% -scale 3333%']]'
-INFO: 2019-12-08 08:26:55,726: log_options() 'icon = Light'
-INFO: 2019-12-08 08:26:55,726: log_options() 'lightness_enabled = False'
-INFO: 2019-12-08 08:26:55,726: log_options() 'lightness_mode = 0'
-INFO: 2019-12-08 08:26:55,726: log_options() 'min_rating = 4'
-INFO: 2019-12-08 08:26:55,726: log_options() 'min_rating_enabled = False'
-INFO: 2019-12-08 08:26:55,726: log_options() 'min_size = 80'
-INFO: 2019-12-08 08:26:55,726: log_options() 'min_size_enabled = False'
-INFO: 2019-12-08 08:26:55,726: log_options() 'quota_enabled = False'
-INFO: 2019-12-08 08:26:55,726: log_options() 'quota_size = 500'
-INFO: 2019-12-08 08:26:55,726: log_options() 'quotes_authors = '
-INFO: 2019-12-08 08:26:55,726: log_options() 'quotes_bg_color = [80, 80, 80]'
-INFO: 2019-12-08 08:26:55,726: log_options() 'quotes_bg_opacity = 55'
-INFO: 2019-12-08 08:26:55,726: log_options() 'quotes_change_enabled = True'
-INFO: 2019-12-08 08:26:55,726: log_options() 'quotes_change_interval = 300'
-INFO: 2019-12-08 08:26:55,726: log_options() 'quotes_disabled_sources = ['QuotesDaddy']'
-INFO: 2019-12-08 08:26:55,726: log_options() 'quotes_enabled = True'
-INFO: 2019-12-08 08:26:55,726: log_options() 'quotes_favorites_file = /home/alex/.config/variety/favorite_quotes.txt'
-INFO: 2019-12-08 08:26:55,726: log_options() 'quotes_font = Bitstream Charter 30'
-INFO: 2019-12-08 08:26:55,727: log_options() 'quotes_hpos = 100'
-INFO: 2019-12-08 08:26:55,727: log_options() 'quotes_tags = '
-INFO: 2019-12-08 08:26:55,727: log_options() 'quotes_text_color = [255, 255, 255]'
-INFO: 2019-12-08 08:26:55,727: log_options() 'quotes_text_shadow = False'
-INFO: 2019-12-08 08:26:55,727: log_options() 'quotes_vpos = 40'
-INFO: 2019-12-08 08:26:55,727: log_options() 'quotes_width = 70'
-INFO: 2019-12-08 08:26:55,727: log_options() 'safe_mode = False'
-INFO: 2019-12-08 08:26:55,727: log_options() 'slideshow_custom_enabled = False'
-INFO: 2019-12-08 08:26:55,727: log_options() 'slideshow_custom_folder = /home/alex'
-INFO: 2019-12-08 08:26:55,727: log_options() 'slideshow_downloads_enabled = False'
-INFO: 2019-12-08 08:26:55,727: log_options() 'slideshow_fade = 0.4'
-INFO: 2019-12-08 08:26:55,727: log_options() 'slideshow_favorites_enabled = True'
-INFO: 2019-12-08 08:26:55,727: log_options() 'slideshow_mode = Fullscreen'
-INFO: 2019-12-08 08:26:55,727: log_options() 'slideshow_monitor = All'
-INFO: 2019-12-08 08:26:55,727: log_options() 'slideshow_pan = 0.05'
-INFO: 2019-12-08 08:26:55,727: log_options() 'slideshow_seconds = 6.0'
-INFO: 2019-12-08 08:26:55,727: log_options() 'slideshow_sort_order = Random'
-INFO: 2019-12-08 08:26:55,727: log_options() 'slideshow_sources_enabled = True'
-INFO: 2019-12-08 08:26:55,728: log_options() 'slideshow_zoom = 0.2'
-INFO: 2019-12-08 08:26:55,728: log_options() 'smart_enabled = False'
-INFO: 2019-12-08 08:26:55,728: log_options() 'smart_notice_shown = False'
-INFO: 2019-12-08 08:26:55,728: log_options() 'smart_register_shown = False'
-INFO: 2019-12-08 08:26:55,728: log_options() 'sources = [[True, 3, 'The Favorites folder'], [True, 4, 'The Fetched folder'], [True, 2, '/usr/share/backgrounds'], [True, 6, 'Random wallpapers from Desktoppr.co'], [True, 15, 'Bing Photo of the Day'], [True, 16, 'High-resolution photos from Unsplash.com'], [True, 8, "NASA's Astronomy Picture of the Day"], [False, 11, 'World Sunlight Map - live wallpaper from Die.net'], [True, 7, 'user:www.flickr.com/photos/peter-levi/;user_id:93647178@N00;']]'
-INFO: 2019-12-08 08:26:55,728: log_options() 'stats_enabled = True'
-INFO: 2019-12-08 08:26:55,728: log_options() 'stats_notice_shown = False'
-INFO: 2019-12-08 08:26:55,728: log_options() 'sync_enabled = True'
-INFO: 2019-12-08 08:26:55,728: log_options() 'use_landscape_enabled = True'
-INFO: 2019-12-08 08:26:55,728: reload_config() 'No need to clear prepared queue'
-INFO: 2019-12-08 08:26:55,728: clock_thread_method() 'clock thread running'
-INFO: 2019-12-08 08:26:55,729: start() 'Starting QuotesEngine'
-INFO: 2019-12-08 08:26:55,729: load() 'Loading quotes file /usr/share/variety/plugins/quotes/quotes.txt'
-INFO: 2019-12-08 08:26:55,746: prepare_thread() 'Quotes prepare thread running'
-INFO: 2019-12-08 08:26:55,746: prepare_thread() 'Quotes prepared buffer contains 0 quotes, fetching a quote'
-INFO: 2019-12-08 08:26:55,746: get_for_search_url() 'Fetching quotes from Goodreads for search url=http://www.quotationspage.com/random.php'
-INFO: 2019-12-08 08:26:55,747: regular_change_thread() 'Quotes regular change thread running'
-INFO: 2019-12-08 08:26:55,747: on_options_updated() 'Quotes: clearing prepared and updating plugins'
-INFO: 2019-12-08 08:26:55,747: load_last_change_time() 'Change interval < 6 hours, ignore persisted last_change_time, wait initially the whole interval: 300'
-INFO: 2019-12-08 08:26:55,747: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1566964913420-5d4a31a46a23.jpg'
-INFO: 2019-12-08 08:26:55,752: regular_change_thread() 'regular_change thread running'
-INFO: 2019-12-08 08:26:55,752: prepare_thread() 'Prepare thread running'
-INFO: 2019-12-08 08:26:55,752: prepare_thread() 'Prepared buffer contains 0 images'
-INFO: 2019-12-08 08:26:55,752: prepare_thread() 'Preparing some images'
-INFO: 2019-12-08 08:26:55,754: update_indicator_icon() 'Creating indicator'
-WARNING: 2019-12-08 08:26:55,772: create_menu() 'Variety Slideshow is not installed. This is an optional extension adding pan-and-zoom slideshows to Variety: see https://github.com/peterlevi/variety-slideshow for details'
-INFO: 2019-12-08 08:26:55,773: create_indicator() 'indicator backend: fallback tray'
-INFO: 2019-12-08 08:26:55,831: set_from_theme_icon() 'Showing status icon variety-indicator from GTK theme'
-INFO: 2019-12-08 08:26:55,832: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1566964913420-5d4a31a46a23.jpg'
-INFO: 2019-12-08 08:26:55,848: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1566964913420-5d4a31a46a23.jpg, time: 1575764815.8480706'
-INFO: 2019-12-08 08:26:55,855: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:4240, ih:2832, scw:1920, sch:1282, ho:0, vo:101'
-INFO: 2019-12-08 08:26:55,856: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+209 '08:26' -fill white -annotate 0x0+60+211 '08:26' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+159 '星期日, 十二月 08' -fill white -annotate 0x0+60+161 '星期日, 十二月 08''
-INFO: 2019-12-08 08:26:55,856: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/Pictures/mywallpapers/Unsplash/photo-1566964913420-5d4a31a46a23.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+209 '08:26' -fill white -annotate 0x0+60+211 '08:26' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+159 '星期日, 十二月 08' -fill white -annotate 0x0+60+161 '星期日, 十二月 08' /home/alex/.config/variety/wallpaper/wallpaper-clock-e7cc3fe8f3593cb88d31e95b49c1ec22.jpg'
-INFO: 2019-12-08 08:26:55,891: prepare_thread() 'After search prepared buffer contains 91 images'
-INFO: 2019-12-08 08:26:56,278: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1566964913420-5d4a31a46a23.jpg'
-INFO: 2019-12-08 08:26:56,354: get_for_search_url() 'Used QuotationsPage url http://www.quotationspage.com/random.php'
-WARNING: 2019-12-08 08:26:56,360: get_from_html() 'QuotationsPage: no quotes found at http://www.quotationspage.com/random.php'
-WARNING: 2019-12-08 08:26:56,361: get_one_quote() 'No quotes for '' for plugin TheQuotationsPage.com'
-INFO: 2019-12-08 08:26:56,361: get_for_keyword() 'Fetching quotes from Goodreads for keyword=christianity'
-INFO: 2019-12-08 08:26:56,730: clock_thread_method() 'clock_thread updates wallpaper'
-INFO: 2019-12-08 08:26:56,848: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1566964913420-5d4a31a46a23.jpg, time: 1575764816.848469'
-INFO: 2019-12-08 08:26:56,848: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:4240, ih:2832, scw:1920, sch:1282, ho:0, vo:101'
-INFO: 2019-12-08 08:26:56,849: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+209 '08:26' -fill white -annotate 0x0+60+211 '08:26' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+159 '星期日, 十二月 08' -fill white -annotate 0x0+60+161 '星期日, 十二月 08''
-INFO: 2019-12-08 08:26:56,849: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/Pictures/mywallpapers/Unsplash/photo-1566964913420-5d4a31a46a23.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+209 '08:26' -fill white -annotate 0x0+60+211 '08:26' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+159 '星期日, 十二月 08' -fill white -annotate 0x0+60+161 '星期日, 十二月 08' /home/alex/.config/variety/wallpaper/wallpaper-clock-de7220a7c77b6c5bcb7cf847521074a5.jpg'
-INFO: 2019-12-08 08:26:57,090: reload() 'Reloading preferences dialog'
-INFO: 2019-12-08 08:26:57,172: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1566964913420-5d4a31a46a23.jpg'
-INFO: 2019-12-08 08:27:00,735: clock_thread_method() 'clock_thread updates wallpaper'
-INFO: 2019-12-08 08:27:00,736: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1566964913420-5d4a31a46a23.jpg, time: 1575764820.7366168'
-INFO: 2019-12-08 08:27:00,738: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:4240, ih:2832, scw:1920, sch:1282, ho:0, vo:101'
-INFO: 2019-12-08 08:27:00,739: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+209 '08:27' -fill white -annotate 0x0+60+211 '08:27' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+159 '星期日, 十二月 08' -fill white -annotate 0x0+60+161 '星期日, 十二月 08''
-INFO: 2019-12-08 08:27:00,739: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/Pictures/mywallpapers/Unsplash/photo-1566964913420-5d4a31a46a23.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+209 '08:27' -fill white -annotate 0x0+60+211 '08:27' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+159 '星期日, 十二月 08' -fill white -annotate 0x0+60+161 '星期日, 十二月 08' /home/alex/.config/variety/wallpaper/wallpaper-clock-654461debde91b0f00a62147cf8ec056.jpg'
-INFO: 2019-12-08 08:27:00,752: set_wallpaper() 'Calling set_wallpaper with /home/alex/Pictures/mywallpapers/Unsplash/photo-1568870217921-76a1c44b93c2.jpg'
-INFO: 2019-12-08 08:27:00,753: prepare_thread() 'Prepared buffer contains 90 images'
-INFO: 2019-12-08 08:27:00,755: regular_change_thread() 'regular_change: waiting till user resumes'
-INFO: 2019-12-08 08:27:01,053: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1566964913420-5d4a31a46a23.jpg'
-INFO: 2019-12-08 08:27:01,737: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1568870217921-76a1c44b93c2.jpg, time: 1575764821.73732'
-INFO: 2019-12-08 08:27:01,739: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:5570, ih:3713, scw:1920, sch:1279, ho:0, vo:99'
-INFO: 2019-12-08 08:27:01,740: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+207 '08:27' -fill white -annotate 0x0+60+209 '08:27' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+157 '星期日, 十二月 08' -fill white -annotate 0x0+60+159 '星期日, 十二月 08''
-INFO: 2019-12-08 08:27:01,740: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/Pictures/mywallpapers/Unsplash/photo-1568870217921-76a1c44b93c2.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+207 '08:27' -fill white -annotate 0x0+60+209 '08:27' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+157 '星期日, 十二月 08' -fill white -annotate 0x0+60+159 '星期日, 十二月 08' /home/alex/.config/variety/wallpaper/wallpaper-clock-c2819026bab387242234b8a2a81dd354.jpg'
-INFO: 2019-12-08 08:27:02,230: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1568870217921-76a1c44b93c2.jpg'
-ERROR: 2019-12-08 08:27:04,190: get_one_quote() 'Exception in quote plugin'
+INFO: 2019-12-18 10:17:59,362: perform_upgrade() 'Last run version was 0.7.2 or earlier, current version is 0.7.2'
+INFO: 2019-12-18 10:17:59,453: process_command() 'Received command: []'
+INFO: 2019-12-18 10:17:59,454: load_banned() 'Missing or invalid banned URLs list, no URLs will be banned'
+INFO: 2019-12-18 10:17:59,504: load() 'Jumble loading'
+INFO: 2019-12-18 10:17:59,505: _walk_modules() 'Jumble loading module in __init__ from /usr/share/variety/plugins/__init__.py'
+INFO: 2019-12-18 10:17:59,506: _walk_modules() 'Jumble loading module in GoodreadsSource from /usr/share/variety/plugins/quotes/GoodreadsSource.py'
+INFO: 2019-12-18 10:17:59,515: load() 'Jumble found plugin class: <class 'GoodreadsSource.GoodreadsSource'>: {'name': 'Goodreads', 'description': '从 Goodreads.com 获取箴言', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2019-12-18 10:17:59,515: _walk_modules() 'Jumble loading module in QuotationsPageSource from /usr/share/variety/plugins/quotes/QuotationsPageSource.py'
+INFO: 2019-12-18 10:17:59,517: load() 'Jumble found plugin class: <class 'QuotationsPageSource.QuotationsPageSource'>: {'name': 'TheQuotationsPage.com', 'description': '从 QuotationsPage.com 获取箴言', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2019-12-18 10:17:59,518: _walk_modules() 'Jumble loading module in LocalFilesSource from /usr/share/variety/plugins/quotes/LocalFilesSource.py'
+INFO: 2019-12-18 10:17:59,519: load() 'Jumble found plugin class: <class 'LocalFilesSource.LocalFilesSource'>: {'name': 'Local text files', 'description': 'Displays quotes, defined in local text files.\nPut your own txt files in: ~/.config/variety/pluginconfig/quotes/.\nThe file format is:\n\nquote -- author\n.\nsecond quote -- another author\n.\netc...\n\nExample: http://rvelthuis.de/zips/quotes.txt', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2019-12-18 10:17:59,519: _walk_modules() 'Jumble loading module in __init__ from /usr/share/variety/plugins/quotes/__init__.py'
+INFO: 2019-12-18 10:17:59,520: _walk_modules() 'Jumble loading module in QuotesDaddySource from /usr/share/variety/plugins/quotes/QuotesDaddySource.py'
+INFO: 2019-12-18 10:17:59,520: load() 'Jumble found plugin class: <class 'QuotesDaddySource.QuotesDaddySource'>: {'name': 'QuotesDaddy', 'description': '从QuotesDaddy的每日箴言RSS订阅中中获取箴言。不支持按标签或作者搜索。', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2019-12-18 10:17:59,524: reload_config() 'Creating new downloader for type 6, location Random wallpapers from Desktoppr.co'
+INFO: 2019-12-18 10:17:59,524: reload_config() 'Creating new downloader for type 15, location Bing Photo of the Day'
+INFO: 2019-12-18 10:17:59,524: reload_config() 'Creating new downloader for type 16, location High-resolution photos from Unsplash.com'
+INFO: 2019-12-18 10:17:59,524: reload_config() 'Creating new downloader for type 8, location NASA's Astronomy Picture of the Day'
+INFO: 2019-12-18 10:17:59,524: reload_config() 'Creating new downloader for type 7, location user:www.flickr.com/photos/peter-levi/;user_id:93647178@N00;'
+INFO: 2019-12-18 10:17:59,525: log_options() 'Loaded options:'
+INFO: 2019-12-18 10:17:59,525: log_options() 'change_enabled = False'
+INFO: 2019-12-18 10:17:59,525: log_options() 'change_interval = 300'
+INFO: 2019-12-18 10:17:59,525: log_options() 'change_on_start = True'
+INFO: 2019-12-18 10:17:59,525: log_options() 'clipboard_enabled = False'
+INFO: 2019-12-18 10:17:59,525: log_options() 'clipboard_hosts = ['wallhaven.cc', 'wallpapers.net', 'flickr.com', 'imgur.com', 'deviantart.com', 'interfacelift.com', 'vladstudio.com', 'imageshack.us', 'deviantart.net', 'imageshack.com']'
+INFO: 2019-12-18 10:17:59,525: log_options() 'clipboard_use_whitelist = True'
+INFO: 2019-12-18 10:17:59,525: log_options() 'clock_date_font = Sans Bold 30'
+INFO: 2019-12-18 10:17:59,525: log_options() 'clock_enabled = True'
+INFO: 2019-12-18 10:17:59,525: log_options() 'clock_filter = -density 100 -font `fc-match -f '%{file[0]}' '%CLOCK_FONT_NAME'` -pointsize %CLOCK_FONT_SIZE -gravity SouthEast -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+108] '%H:%M' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+110] '%H:%M' -font `fc-match -f '%{file[0]}' '%DATE_FONT_NAME'` -pointsize %DATE_FONT_SIZE -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+58] '%A, %B %d' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+60] '%A, %B %d''
+INFO: 2019-12-18 10:17:59,525: log_options() 'clock_font = Sans Italic 140'
+INFO: 2019-12-18 10:17:59,525: log_options() 'configfile = /home/alex/.config/variety/variety.conf'
+INFO: 2019-12-18 10:17:59,525: log_options() 'copyto_enabled = False'
+INFO: 2019-12-18 10:17:59,525: log_options() 'copyto_folder = Default'
+INFO: 2019-12-18 10:17:59,525: log_options() 'desired_color = [160, 160, 160]'
+INFO: 2019-12-18 10:17:59,525: log_options() 'desired_color_enabled = False'
+INFO: 2019-12-18 10:17:59,525: log_options() 'download_enabled = True'
+INFO: 2019-12-18 10:17:59,525: log_options() 'download_folder = /home/alex/Pictures/mywallpapers'
+INFO: 2019-12-18 10:17:59,525: log_options() 'download_interval = 300'
+INFO: 2019-12-18 10:17:59,525: log_options() 'favorites_folder = /home/alex/.config/variety/Favorites'
+INFO: 2019-12-18 10:17:59,525: log_options() 'favorites_operations = [['Downloaded', 'Copy'], ['Fetched', 'Move'], ['Others', 'Copy']]'
+INFO: 2019-12-18 10:17:59,525: log_options() 'fetched_folder = /home/alex/.config/variety/Fetched'
+INFO: 2019-12-18 10:17:59,526: log_options() 'filters = [[False, 'Keep original', ''], [False, 'Grayscale', '-type Grayscale'], [False, 'Heavy blur', '-blur 120x40'], [False, 'Soft blur', '-blur 20x7'], [False, 'Oil painting', '-paint 8'], [False, 'Pencil sketch', '-colorspace gray \\( +clone -tile ~/.config/variety/pencil_tile.png -draw "color 0,0 reset" +clone +swap -compose color_dodge -composite \\) -fx \'u*.2+v*.8\''], [False, 'Pointilism', '-spread 10 -noise 3'], [False, 'Pixellate', '-scale 3% -scale 3333%']]'
+INFO: 2019-12-18 10:17:59,526: log_options() 'icon = Light'
+INFO: 2019-12-18 10:17:59,526: log_options() 'lightness_enabled = False'
+INFO: 2019-12-18 10:17:59,526: log_options() 'lightness_mode = 0'
+INFO: 2019-12-18 10:17:59,526: log_options() 'min_rating = 4'
+INFO: 2019-12-18 10:17:59,526: log_options() 'min_rating_enabled = False'
+INFO: 2019-12-18 10:17:59,526: log_options() 'min_size = 80'
+INFO: 2019-12-18 10:17:59,526: log_options() 'min_size_enabled = False'
+INFO: 2019-12-18 10:17:59,526: log_options() 'quota_enabled = False'
+INFO: 2019-12-18 10:17:59,526: log_options() 'quota_size = 500'
+INFO: 2019-12-18 10:17:59,526: log_options() 'quotes_authors = '
+INFO: 2019-12-18 10:17:59,526: log_options() 'quotes_bg_color = [80, 80, 80]'
+INFO: 2019-12-18 10:17:59,526: log_options() 'quotes_bg_opacity = 55'
+INFO: 2019-12-18 10:17:59,526: log_options() 'quotes_change_enabled = True'
+INFO: 2019-12-18 10:17:59,526: log_options() 'quotes_change_interval = 300'
+INFO: 2019-12-18 10:17:59,526: log_options() 'quotes_disabled_sources = ['QuotesDaddy']'
+INFO: 2019-12-18 10:17:59,526: log_options() 'quotes_enabled = True'
+INFO: 2019-12-18 10:17:59,526: log_options() 'quotes_favorites_file = /home/alex/.config/variety/favorite_quotes.txt'
+INFO: 2019-12-18 10:17:59,526: log_options() 'quotes_font = Bitstream Charter 30'
+INFO: 2019-12-18 10:17:59,526: log_options() 'quotes_hpos = 100'
+INFO: 2019-12-18 10:17:59,526: log_options() 'quotes_tags = '
+INFO: 2019-12-18 10:17:59,526: log_options() 'quotes_text_color = [255, 255, 255]'
+INFO: 2019-12-18 10:17:59,526: log_options() 'quotes_text_shadow = False'
+INFO: 2019-12-18 10:17:59,526: log_options() 'quotes_vpos = 40'
+INFO: 2019-12-18 10:17:59,526: log_options() 'quotes_width = 70'
+INFO: 2019-12-18 10:17:59,527: log_options() 'safe_mode = False'
+INFO: 2019-12-18 10:17:59,527: log_options() 'slideshow_custom_enabled = False'
+INFO: 2019-12-18 10:17:59,527: log_options() 'slideshow_custom_folder = /home/alex/图片'
+INFO: 2019-12-18 10:17:59,527: log_options() 'slideshow_downloads_enabled = False'
+INFO: 2019-12-18 10:17:59,527: log_options() 'slideshow_fade = 0.4'
+INFO: 2019-12-18 10:17:59,527: log_options() 'slideshow_favorites_enabled = True'
+INFO: 2019-12-18 10:17:59,527: log_options() 'slideshow_mode = Fullscreen'
+INFO: 2019-12-18 10:17:59,527: log_options() 'slideshow_monitor = All'
+INFO: 2019-12-18 10:17:59,527: log_options() 'slideshow_pan = 0.05'
+INFO: 2019-12-18 10:17:59,527: log_options() 'slideshow_seconds = 6.0'
+INFO: 2019-12-18 10:17:59,527: log_options() 'slideshow_sort_order = Random'
+INFO: 2019-12-18 10:17:59,527: log_options() 'slideshow_sources_enabled = True'
+INFO: 2019-12-18 10:17:59,527: log_options() 'slideshow_zoom = 0.2'
+INFO: 2019-12-18 10:17:59,527: log_options() 'smart_enabled = False'
+INFO: 2019-12-18 10:17:59,527: log_options() 'smart_notice_shown = False'
+INFO: 2019-12-18 10:17:59,527: log_options() 'smart_register_shown = False'
+INFO: 2019-12-18 10:17:59,527: log_options() 'sources = [[True, 3, 'The Favorites folder'], [True, 4, 'The Fetched folder'], [True, 2, '/usr/share/backgrounds'], [True, 6, 'Random wallpapers from Desktoppr.co'], [True, 15, 'Bing Photo of the Day'], [True, 16, 'High-resolution photos from Unsplash.com'], [True, 8, "NASA's Astronomy Picture of the Day"], [False, 11, 'World Sunlight Map - live wallpaper from Die.net'], [True, 7, 'user:www.flickr.com/photos/peter-levi/;user_id:93647178@N00;']]'
+INFO: 2019-12-18 10:17:59,527: log_options() 'stats_enabled = True'
+INFO: 2019-12-18 10:17:59,527: log_options() 'stats_notice_shown = False'
+INFO: 2019-12-18 10:17:59,527: log_options() 'sync_enabled = True'
+INFO: 2019-12-18 10:17:59,527: log_options() 'use_landscape_enabled = True'
+INFO: 2019-12-18 10:17:59,527: reload_config() 'No need to clear prepared queue'
+INFO: 2019-12-18 10:17:59,528: clock_thread_method() 'clock thread running'
+INFO: 2019-12-18 10:17:59,528: start() 'Starting QuotesEngine'
+INFO: 2019-12-18 10:17:59,528: load() 'Loading quotes file /usr/share/variety/plugins/quotes/quotes.txt'
+INFO: 2019-12-18 10:17:59,543: prepare_thread() 'Quotes prepare thread running'
+INFO: 2019-12-18 10:17:59,543: prepare_thread() 'Quotes prepared buffer contains 0 quotes, fetching a quote'
+INFO: 2019-12-18 10:17:59,544: regular_change_thread() 'Quotes regular change thread running'
+INFO: 2019-12-18 10:17:59,544: get_for_search_url() 'Fetching quotes from Goodreads for search url=http://www.quotationspage.com/random.php'
+INFO: 2019-12-18 10:17:59,544: on_options_updated() 'Quotes: clearing prepared and updating plugins'
+INFO: 2019-12-18 10:17:59,545: load_last_change_time() 'Change interval < 6 hours, ignore persisted last_change_time, wait initially the whole interval: 300'
+INFO: 2019-12-18 10:17:59,545: update_indicator() 'Setting file info to: /usr/share/wallpapers/Breath/contents/images/1920x1080.png
+/home/alex/.config/variety/wallpaper/wallpaper-clock-c9115d0d7a38e0972d48b48c7a3a3e43.jpg'
+INFO: 2019-12-18 10:17:59,549: regular_change_thread() 'regular_change thread running'
+INFO: 2019-12-18 10:17:59,549: prepare_thread() 'Prepare thread running'
+INFO: 2019-12-18 10:17:59,549: prepare_thread() 'Prepared buffer contains 0 images'
+INFO: 2019-12-18 10:17:59,550: prepare_thread() 'Preparing some images'
+INFO: 2019-12-18 10:17:59,552: update_indicator_icon() 'Creating indicator'
+WARNING: 2019-12-18 10:17:59,577: create_menu() 'Variety Slideshow is not installed. This is an optional extension adding pan-and-zoom slideshows to Variety: see https://github.com/peterlevi/variety-slideshow for details'
+INFO: 2019-12-18 10:17:59,579: create_indicator() 'indicator backend: fallback tray'
+INFO: 2019-12-18 10:17:59,632: set_from_theme_icon() 'Showing status icon variety-indicator from GTK theme'
+INFO: 2019-12-18 10:17:59,633: update_indicator() 'Setting file info to: /usr/share/wallpapers/Breath/contents/images/1920x1080.png
+/home/alex/.config/variety/wallpaper/wallpaper-clock-c9115d0d7a38e0972d48b48c7a3a3e43.jpg'
+INFO: 2019-12-18 10:17:59,645: do_set_wp() 'Calling do_set_wp with /usr/share/wallpapers/Breath/contents/images/1920x1080.png
+/home/alex/.config/variety/wallpaper/wallpaper-clock-c9115d0d7a38e0972d48b48c7a3a3e43.jpg, time: 1576635479.6458843'
+INFO: 2019-12-18 10:17:59,645: do_set_wp() 'Missing file or bad permissions, will not use it: /usr/share/wallpapers/Breath/contents/images/1920x1080.png
+/home/alex/.config/variety/wallpaper/wallpaper-clock-c9115d0d7a38e0972d48b48c7a3a3e43.jpg'
+INFO: 2019-12-18 10:17:59,693: prepare_thread() 'After search prepared buffer contains 90 images'
+INFO: 2019-12-18 10:18:00,267: get_for_search_url() 'Used QuotationsPage url http://www.quotationspage.com/random.php'
+INFO: 2019-12-18 10:18:00,528: clock_thread_method() 'clock_thread updates wallpaper'
+INFO: 2019-12-18 10:18:00,646: do_set_wp() 'Calling do_set_wp with /usr/share/wallpapers/Breath/contents/images/1920x1080.png
+/home/alex/.config/variety/wallpaper/wallpaper-clock-c9115d0d7a38e0972d48b48c7a3a3e43.jpg, time: 1576635480.6464996'
+INFO: 2019-12-18 10:18:00,646: do_set_wp() 'Missing file or bad permissions, will not use it: /usr/share/wallpapers/Breath/contents/images/1920x1080.png
+/home/alex/.config/variety/wallpaper/wallpaper-clock-c9115d0d7a38e0972d48b48c7a3a3e43.jpg'
+INFO: 2019-12-18 10:18:00,893: reload() 'Reloading preferences dialog'
+INFO: 2019-12-18 10:18:02,285: prepare_thread() 'Quotes prepared buffer contains 0 quotes, fetching a quote'
+INFO: 2019-12-18 10:18:02,285: get_for_keyword() 'Fetching quotes from Goodreads for keyword=education'
+INFO: 2019-12-18 10:18:04,549: set_wallpaper() 'Calling set_wallpaper with /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg'
+INFO: 2019-12-18 10:18:04,550: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg, time: 1576635484.550802'
+INFO: 2019-12-18 10:18:04,551: prepare_thread() 'Prepared buffer contains 89 images'
+INFO: 2019-12-18 10:18:04,559: regular_change_thread() 'regular_change: waiting till user resumes'
+INFO: 2019-12-18 10:18:04,776: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:18:04,818: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:18:04,819: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:18' -fill white -annotate 0x0+60+210 '10:18' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18''
+INFO: 2019-12-18 10:18:04,819: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-9ba9df786faa27f242abff19a3c45b3b.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:18' -fill white -annotate 0x0+60+210 '10:18' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18' /home/alex/.config/variety/wallpaper/wallpaper-clock-d46abe4a4af17cf033c1e9c1db358b18.jpg'
+INFO: 2019-12-18 10:18:05,011: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg'
+ERROR: 2019-12-18 10:18:07,304: get_one_quote() 'Exception in quote plugin'
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "/usr/lib/python3.7/site-packages/urllib3/util/connection.py", line 80, in create_connection
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 156, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 84, in create_connection
     raise err
-  File "/usr/lib/python3.7/site-packages/urllib3/util/connection.py", line 70, in create_connection
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 74, in create_connection
     sock.connect(sa)
 socket.timeout: timed out
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
-    chunked=chunked)
-  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 376, in _make_request
     self._validate_conn(conn)
-  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 994, in _validate_conn
     conn.connect()
-  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 316, in connect
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 334, in connect
     conn = self._new_conn()
-  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 165, in _new_conn
-    (self.host, self.timeout))
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.VerifiedHTTPSConnection object at 0x7f90c1ce1bd0>, 'Connection to www.goodreads.com timed out. (connect timeout=5)')
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 161, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.VerifiedHTTPSConnection object at 0x7f926018cfa0>, 'Connection to www.goodreads.com timed out. (connect timeout=5)')
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
-    timeout=timeout
-  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/retry.py", line 436, in increment
     raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.goodreads.com', port=443): Max retries exceeded with url: /quotes/tag?utf8=%E2%9C%93&id=christianity (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7f90c1ce1bd0>, 'Connection to www.goodreads.com timed out. (connect timeout=5)'))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.goodreads.com', port=443): Max retries exceeded with url: /quotes/tag?utf8=%E2%9C%93&id=education (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7f926018cfa0>, 'Connection to www.goodreads.com timed out. (connect timeout=5)'))
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/variety/QuotesEngine.py", line 268, in get_one_quote
+  File "/usr/lib/python3.8/site-packages/variety/QuotesEngine.py", line 268, in get_one_quote
     quotes = plugin["plugin"].get_random()
   File "/usr/share/variety/plugins/quotes/GoodreadsSource.py", line 58, in get_random
     return self.get_for_keyword(random.choice(KEYWORDS))[:4]
   File "/usr/share/variety/plugins/quotes/GoodreadsSource.py", line 79, in get_for_keyword
     soup = Util.html_soup(url)
-  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 597, in html_soup
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 597, in html_soup
     return bs4.BeautifulSoup(Util.fetch(url, data), "lxml")
-  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 585, in fetch
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 585, in fetch
     return Util.request(url, data).text
-  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
-    timeout=timeout)
-  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 565, in request
+    r = requests.request(method=method,
+  File "/usr/lib/python3.8/site-packages/requests/api.py", line 60, in request
     return session.request(method=method, url=url, **kwargs)
-  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 533, in request
     resp = self.send(prep, **send_kwargs)
-  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 646, in send
     r = adapter.send(request, **kwargs)
-  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 504, in send
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 504, in send
     raise ConnectTimeout(e, request=request)
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.goodreads.com', port=443): Max retries exceeded with url: /quotes/tag?utf8=%E2%9C%93&id=christianity (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7f90c1ce1bd0>, 'Connection to www.goodreads.com timed out. (connect timeout=5)'))
-INFO: 2019-12-08 08:27:04,194: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1568870217921-76a1c44b93c2.jpg, time: 1575764824.1944199'
-INFO: 2019-12-08 08:27:04,304: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
-INFO: 2019-12-08 08:27:04,361: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
-INFO: 2019-12-08 08:27:04,361: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '08:27' -fill white -annotate 0x0+60+210 '08:27' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期日, 十二月 08' -fill white -annotate 0x0+60+160 '星期日, 十二月 08''
-INFO: 2019-12-08 08:27:04,361: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-a8d301c6d9ab2cbd5956744b42a44bc0.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '08:27' -fill white -annotate 0x0+60+210 '08:27' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期日, 十二月 08' -fill white -annotate 0x0+60+160 '星期日, 十二月 08' /home/alex/.config/variety/wallpaper/wallpaper-clock-175de27feb91a2016a38d4f113bd22ae.jpg'
-INFO: 2019-12-08 08:27:04,514: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1568870217921-76a1c44b93c2.jpg'
-INFO: 2019-12-08 08:27:06,195: prepare_thread() 'Quotes prepared buffer contains 0 quotes, fetching a quote'
-INFO: 2019-12-08 08:27:08,197: prepare_thread() 'Quotes prepared buffer contains 1 quotes, fetching a quote'
-INFO: 2019-12-08 08:27:08,198: get_for_search_url() 'Fetching quotes from Goodreads for search url=http://www.quotationspage.com/random.php'
-INFO: 2019-12-08 08:27:08,935: get_for_search_url() 'Used QuotationsPage url http://www.quotationspage.com/random.php'
-WARNING: 2019-12-08 08:27:08,940: get_from_html() 'QuotationsPage: no quotes found at http://www.quotationspage.com/random.php'
-WARNING: 2019-12-08 08:27:08,940: get_one_quote() 'No quotes for '' for plugin TheQuotationsPage.com'
-INFO: 2019-12-08 08:27:10,943: prepare_thread() 'Quotes prepared buffer contains 2 quotes, fetching a quote'
-INFO: 2019-12-08 08:27:10,943: get_for_search_url() 'Fetching quotes from Goodreads for search url=http://www.quotationspage.com/random.php'
-INFO: 2019-12-08 08:27:11,238: get_for_search_url() 'Used QuotationsPage url http://www.quotationspage.com/random.php'
-WARNING: 2019-12-08 08:27:11,242: get_from_html() 'QuotationsPage: no quotes found at http://www.quotationspage.com/random.php'
-WARNING: 2019-12-08 08:27:11,242: get_one_quote() 'No quotes for '' for plugin TheQuotationsPage.com'
-INFO: 2019-12-08 08:27:13,245: prepare_thread() 'Quotes prepared buffer contains 3 quotes, fetching a quote'
-INFO: 2019-12-08 08:27:15,247: prepare_thread() 'Quotes prepared buffer contains 4 quotes, fetching a quote'
-INFO: 2019-12-08 08:27:15,248: get_for_keyword() 'Fetching quotes from Goodreads for keyword=paranormal-romance'
-INFO: 2019-12-08 08:27:15,757: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
-ERROR: 2019-12-08 08:27:16,119: server_options_thread() 'Could not fetch Variety serverside options'
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.goodreads.com', port=443): Max retries exceeded with url: /quotes/tag?utf8=%E2%9C%93&id=education (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7f926018cfa0>, 'Connection to www.goodreads.com timed out. (connect timeout=5)'))
+INFO: 2019-12-18 10:18:09,310: prepare_thread() 'Quotes prepared buffer contains 1 quotes, fetching a quote'
+INFO: 2019-12-18 10:18:11,316: prepare_thread() 'Quotes prepared buffer contains 2 quotes, fetching a quote'
+INFO: 2019-12-18 10:18:13,319: prepare_thread() 'Quotes prepared buffer contains 3 quotes, fetching a quote'
+INFO: 2019-12-18 10:18:15,322: prepare_thread() 'Quotes prepared buffer contains 4 quotes, fetching a quote'
+INFO: 2019-12-18 10:18:15,322: get_for_keyword() 'Fetching quotes from Goodreads for keyword=freedom'
+INFO: 2019-12-18 10:18:19,570: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
+ERROR: 2019-12-18 10:18:20,335: get_one_quote() 'Exception in quote plugin'
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 939, in server_options_thread
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 156, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 994, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 334, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 161, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.VerifiedHTTPSConnection object at 0x7f92601980a0>, 'Connection to www.goodreads.com timed out. (connect timeout=5)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.goodreads.com', port=443): Max retries exceeded with url: /quotes/tag?utf8=%E2%9C%93&id=freedom (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7f92601980a0>, 'Connection to www.goodreads.com timed out. (connect timeout=5)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/variety/QuotesEngine.py", line 268, in get_one_quote
+    quotes = plugin["plugin"].get_random()
+  File "/usr/share/variety/plugins/quotes/GoodreadsSource.py", line 58, in get_random
+    return self.get_for_keyword(random.choice(KEYWORDS))[:4]
+  File "/usr/share/variety/plugins/quotes/GoodreadsSource.py", line 79, in get_for_keyword
+    soup = Util.html_soup(url)
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 597, in html_soup
+    return bs4.BeautifulSoup(Util.fetch(url, data), "lxml")
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 585, in fetch
+    return Util.request(url, data).text
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 565, in request
+    r = requests.request(method=method,
+  File "/usr/lib/python3.8/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 504, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.goodreads.com', port=443): Max retries exceeded with url: /quotes/tag?utf8=%E2%9C%93&id=freedom (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7f92601980a0>, 'Connection to www.goodreads.com timed out. (connect timeout=5)'))
+INFO: 2019-12-18 10:18:22,338: prepare_thread() 'Quotes prepared buffer contains 5 quotes, fetching a quote'
+INFO: 2019-12-18 10:18:24,340: prepare_thread() 'Quotes prepared buffer contains 6 quotes, fetching a quote'
+INFO: 2019-12-18 10:18:24,340: get_for_keyword() 'Fetching quotes from Goodreads for keyword=pain'
+ERROR: 2019-12-18 10:18:24,589: server_options_thread() 'Could not fetch Variety serverside options'
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 156, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.8/http/client.py", line 1230, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1276, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1225, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1004, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.8/http/client.py", line 944, in send
+    self.connect()
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 184, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 161, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPConnection object at 0x7f9260198ca0>, 'Connection to tiny.cc timed out. (connect timeout=5)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f9260198ca0>, 'Connection to tiny.cc timed out. (connect timeout=5)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/variety/VarietyWindow.py", line 939, in server_options_thread
     self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
-  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 593, in fetch_json
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 593, in fetch_json
     return Util.request(url, data).json()
-  File "/usr/lib/python3.7/site-packages/requests/models.py", line 897, in json
-    return complexjson.loads(self.text, **kwargs)
-  File "/usr/lib/python3.7/json/__init__.py", line 348, in loads
-    return _default_decoder.decode(s)
-  File "/usr/lib/python3.7/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "/usr/lib/python3.7/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-ERROR: 2019-12-08 08:27:22,102: get_one_quote() 'Exception in quote plugin'
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 565, in request
+    r = requests.request(method=method,
+  File "/usr/lib/python3.8/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 504, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f9260198ca0>, 'Connection to tiny.cc timed out. (connect timeout=5)'))
+ERROR: 2019-12-18 10:18:29,354: get_one_quote() 'Exception in quote plugin'
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "/usr/lib/python3.7/site-packages/urllib3/util/connection.py", line 80, in create_connection
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 156, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 84, in create_connection
     raise err
-  File "/usr/lib/python3.7/site-packages/urllib3/util/connection.py", line 70, in create_connection
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 74, in create_connection
     sock.connect(sa)
 socket.timeout: timed out
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
-    chunked=chunked)
-  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 376, in _make_request
     self._validate_conn(conn)
-  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 994, in _validate_conn
     conn.connect()
-  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 316, in connect
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 334, in connect
     conn = self._new_conn()
-  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 165, in _new_conn
-    (self.host, self.timeout))
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.VerifiedHTTPSConnection object at 0x7f90b00d5a90>, 'Connection to www.goodreads.com timed out. (connect timeout=5)')
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 161, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.VerifiedHTTPSConnection object at 0x7f9244780370>, 'Connection to www.goodreads.com timed out. (connect timeout=5)')
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
-    timeout=timeout
-  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/retry.py", line 436, in increment
     raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.goodreads.com', port=443): Max retries exceeded with url: /quotes/tag?utf8=%E2%9C%93&id=paranormal-romance (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7f90b00d5a90>, 'Connection to www.goodreads.com timed out. (connect timeout=5)'))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.goodreads.com', port=443): Max retries exceeded with url: /quotes/tag?utf8=%E2%9C%93&id=pain (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7f9244780370>, 'Connection to www.goodreads.com timed out. (connect timeout=5)'))
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/variety/QuotesEngine.py", line 268, in get_one_quote
+  File "/usr/lib/python3.8/site-packages/variety/QuotesEngine.py", line 268, in get_one_quote
     quotes = plugin["plugin"].get_random()
   File "/usr/share/variety/plugins/quotes/GoodreadsSource.py", line 58, in get_random
     return self.get_for_keyword(random.choice(KEYWORDS))[:4]
   File "/usr/share/variety/plugins/quotes/GoodreadsSource.py", line 79, in get_for_keyword
     soup = Util.html_soup(url)
-  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 597, in html_soup
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 597, in html_soup
     return bs4.BeautifulSoup(Util.fetch(url, data), "lxml")
-  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 585, in fetch
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 585, in fetch
     return Util.request(url, data).text
-  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
-    timeout=timeout)
-  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 565, in request
+    r = requests.request(method=method,
+  File "/usr/lib/python3.8/site-packages/requests/api.py", line 60, in request
     return session.request(method=method, url=url, **kwargs)
-  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 533, in request
     resp = self.send(prep, **send_kwargs)
-  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 646, in send
     r = adapter.send(request, **kwargs)
-  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 504, in send
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 504, in send
     raise ConnectTimeout(e, request=request)
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.goodreads.com', port=443): Max retries exceeded with url: /quotes/tag?utf8=%E2%9C%93&id=paranormal-romance (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7f90b00d5a90>, 'Connection to www.goodreads.com timed out. (connect timeout=5)'))
-INFO: 2019-12-08 08:27:22,103: get_for_search_url() 'Fetching quotes from Goodreads for search url=http://www.quotationspage.com/random.php'
-INFO: 2019-12-08 08:27:22,183: get_for_search_url() 'Used QuotationsPage url http://www.quotationspage.com/random.php'
-WARNING: 2019-12-08 08:27:22,187: get_from_html() 'QuotationsPage: no quotes found at http://www.quotationspage.com/random.php'
-WARNING: 2019-12-08 08:27:22,187: get_one_quote() 'No quotes for '' for plugin TheQuotationsPage.com'
-INFO: 2019-12-08 08:27:24,188: prepare_thread() 'Quotes prepared buffer contains 5 quotes, fetching a quote'
-INFO: 2019-12-08 08:27:24,188: get_for_keyword() 'Fetching quotes from Goodreads for keyword=life-lessons'
-ERROR: 2019-12-08 08:27:30,285: get_one_quote() 'Exception in quote plugin'
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.goodreads.com', port=443): Max retries exceeded with url: /quotes/tag?utf8=%E2%9C%93&id=pain (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7f9244780370>, 'Connection to www.goodreads.com timed out. (connect timeout=5)'))
+INFO: 2019-12-18 10:18:31,358: prepare_thread() 'Quotes prepared buffer contains 7 quotes, fetching a quote'
+INFO: 2019-12-18 10:18:33,361: prepare_thread() 'Quotes prepared buffer contains 8 quotes, fetching a quote'
+INFO: 2019-12-18 10:18:33,361: get_for_keyword() 'Fetching quotes from Goodreads for keyword=reality'
+ERROR: 2019-12-18 10:18:38,378: get_one_quote() 'Exception in quote plugin'
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "/usr/lib/python3.7/site-packages/urllib3/util/connection.py", line 80, in create_connection
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 156, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 84, in create_connection
     raise err
-  File "/usr/lib/python3.7/site-packages/urllib3/util/connection.py", line 70, in create_connection
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 74, in create_connection
     sock.connect(sa)
 socket.timeout: timed out
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
-    chunked=chunked)
-  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 376, in _make_request
     self._validate_conn(conn)
-  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 994, in _validate_conn
     conn.connect()
-  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 316, in connect
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 334, in connect
     conn = self._new_conn()
-  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 165, in _new_conn
-    (self.host, self.timeout))
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.VerifiedHTTPSConnection object at 0x7f90b00d2e90>, 'Connection to www.goodreads.com timed out. (connect timeout=5)')
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 161, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.VerifiedHTTPSConnection object at 0x7f9260193e20>, 'Connection to www.goodreads.com timed out. (connect timeout=5)')
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
-    timeout=timeout
-  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/retry.py", line 436, in increment
     raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.goodreads.com', port=443): Max retries exceeded with url: /quotes/tag?utf8=%E2%9C%93&id=life-lessons (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7f90b00d2e90>, 'Connection to www.goodreads.com timed out. (connect timeout=5)'))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.goodreads.com', port=443): Max retries exceeded with url: /quotes/tag?utf8=%E2%9C%93&id=reality (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7f9260193e20>, 'Connection to www.goodreads.com timed out. (connect timeout=5)'))
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/variety/QuotesEngine.py", line 268, in get_one_quote
+  File "/usr/lib/python3.8/site-packages/variety/QuotesEngine.py", line 268, in get_one_quote
     quotes = plugin["plugin"].get_random()
   File "/usr/share/variety/plugins/quotes/GoodreadsSource.py", line 58, in get_random
     return self.get_for_keyword(random.choice(KEYWORDS))[:4]
   File "/usr/share/variety/plugins/quotes/GoodreadsSource.py", line 79, in get_for_keyword
     soup = Util.html_soup(url)
-  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 597, in html_soup
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 597, in html_soup
     return bs4.BeautifulSoup(Util.fetch(url, data), "lxml")
-  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 585, in fetch
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 585, in fetch
     return Util.request(url, data).text
-  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
-    timeout=timeout)
-  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 565, in request
+    r = requests.request(method=method,
+  File "/usr/lib/python3.8/site-packages/requests/api.py", line 60, in request
     return session.request(method=method, url=url, **kwargs)
-  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 533, in request
     resp = self.send(prep, **send_kwargs)
-  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 646, in send
     r = adapter.send(request, **kwargs)
-  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 504, in send
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 504, in send
     raise ConnectTimeout(e, request=request)
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.goodreads.com', port=443): Max retries exceeded with url: /quotes/tag?utf8=%E2%9C%93&id=life-lessons (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7f90b00d2e90>, 'Connection to www.goodreads.com timed out. (connect timeout=5)'))
-INFO: 2019-12-08 08:27:30,286: get_for_search_url() 'Fetching quotes from Goodreads for search url=http://www.quotationspage.com/random.php'
-INFO: 2019-12-08 08:27:30,308: get_for_search_url() 'Used QuotationsPage url http://www.quotationspage.com/random.php'
-WARNING: 2019-12-08 08:27:30,310: get_from_html() 'QuotationsPage: no quotes found at http://www.quotationspage.com/random.php'
-WARNING: 2019-12-08 08:27:30,310: get_one_quote() 'No quotes for '' for plugin TheQuotationsPage.com'
-INFO: 2019-12-08 08:27:32,311: prepare_thread() 'Quotes prepared buffer contains 6 quotes, fetching a quote'
-INFO: 2019-12-08 08:27:32,312: get_for_keyword() 'Fetching quotes from Goodreads for keyword=art'
-ERROR: 2019-12-08 08:27:38,400: get_one_quote() 'Exception in quote plugin'
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.goodreads.com', port=443): Max retries exceeded with url: /quotes/tag?utf8=%E2%9C%93&id=reality (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7f9260193e20>, 'Connection to www.goodreads.com timed out. (connect timeout=5)'))
+INFO: 2019-12-18 10:18:40,381: prepare_thread() 'Quotes prepared buffer contains 9 quotes, fetching a quote'
+INFO: 2019-12-18 10:18:54,621: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
+ERROR: 2019-12-18 10:18:59,638: server_options_thread() 'Could not fetch Variety serverside options'
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "/usr/lib/python3.7/site-packages/urllib3/util/connection.py", line 80, in create_connection
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 156, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 84, in create_connection
     raise err
-  File "/usr/lib/python3.7/site-packages/urllib3/util/connection.py", line 70, in create_connection
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 74, in create_connection
     sock.connect(sa)
 socket.timeout: timed out
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
-    chunked=chunked)
-  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
-    self._validate_conn(conn)
-  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
-    conn.connect()
-  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 316, in connect
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.8/http/client.py", line 1230, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1276, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1225, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1004, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.8/http/client.py", line 944, in send
+    self.connect()
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 184, in connect
     conn = self._new_conn()
-  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 165, in _new_conn
-    (self.host, self.timeout))
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.VerifiedHTTPSConnection object at 0x7f90b00c8d90>, 'Connection to www.goodreads.com timed out. (connect timeout=5)')
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 161, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPConnection object at 0x7f9260193a00>, 'Connection to tiny.cc timed out. (connect timeout=5)')
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
-    timeout=timeout
-  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/retry.py", line 436, in increment
     raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.goodreads.com', port=443): Max retries exceeded with url: /quotes/tag?utf8=%E2%9C%93&id=art (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7f90b00c8d90>, 'Connection to www.goodreads.com timed out. (connect timeout=5)'))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f9260193a00>, 'Connection to tiny.cc timed out. (connect timeout=5)'))
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/variety/QuotesEngine.py", line 268, in get_one_quote
-    quotes = plugin["plugin"].get_random()
-  File "/usr/share/variety/plugins/quotes/GoodreadsSource.py", line 58, in get_random
-    return self.get_for_keyword(random.choice(KEYWORDS))[:4]
-  File "/usr/share/variety/plugins/quotes/GoodreadsSource.py", line 79, in get_for_keyword
-    soup = Util.html_soup(url)
-  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 597, in html_soup
-    return bs4.BeautifulSoup(Util.fetch(url, data), "lxml")
-  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 585, in fetch
-    return Util.request(url, data).text
-  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
-    timeout=timeout)
-  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
-    return session.request(method=method, url=url, **kwargs)
-  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
-    r = adapter.send(request, **kwargs)
-  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 504, in send
-    raise ConnectTimeout(e, request=request)
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.goodreads.com', port=443): Max retries exceeded with url: /quotes/tag?utf8=%E2%9C%93&id=art (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7f90b00c8d90>, 'Connection to www.goodreads.com timed out. (connect timeout=5)'))
-INFO: 2019-12-08 08:27:38,401: get_for_search_url() 'Fetching quotes from Goodreads for search url=http://www.quotationspage.com/random.php'
-INFO: 2019-12-08 08:27:38,436: get_for_search_url() 'Used QuotationsPage url http://www.quotationspage.com/random.php'
-WARNING: 2019-12-08 08:27:38,438: get_from_html() 'QuotationsPage: no quotes found at http://www.quotationspage.com/random.php'
-WARNING: 2019-12-08 08:27:38,438: get_one_quote() 'No quotes for '' for plugin TheQuotationsPage.com'
-INFO: 2019-12-08 08:27:40,441: prepare_thread() 'Quotes prepared buffer contains 7 quotes, fetching a quote'
-INFO: 2019-12-08 08:27:40,441: get_for_search_url() 'Fetching quotes from Goodreads for search url=http://www.quotationspage.com/random.php'
-INFO: 2019-12-08 08:27:40,660: get_for_search_url() 'Used QuotationsPage url http://www.quotationspage.com/random.php'
-WARNING: 2019-12-08 08:27:40,664: get_from_html() 'QuotationsPage: no quotes found at http://www.quotationspage.com/random.php'
-WARNING: 2019-12-08 08:27:40,664: get_one_quote() 'No quotes for '' for plugin TheQuotationsPage.com'
-INFO: 2019-12-08 08:27:40,664: get_for_keyword() 'Fetching quotes from Goodreads for keyword=faith'
-INFO: 2019-12-08 08:27:46,153: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
-ERROR: 2019-12-08 08:27:46,344: server_options_thread() 'Could not fetch Variety serverside options'
-Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 939, in server_options_thread
+  File "/usr/lib/python3.8/site-packages/variety/VarietyWindow.py", line 939, in server_options_thread
     self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
-  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 593, in fetch_json
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 593, in fetch_json
     return Util.request(url, data).json()
-  File "/usr/lib/python3.7/site-packages/requests/models.py", line 897, in json
-    return complexjson.loads(self.text, **kwargs)
-  File "/usr/lib/python3.7/json/__init__.py", line 348, in loads
-    return _default_decoder.decode(s)
-  File "/usr/lib/python3.7/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "/usr/lib/python3.7/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-ERROR: 2019-12-08 08:27:46,798: get_one_quote() 'Exception in quote plugin'
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 565, in request
+    r = requests.request(method=method,
+  File "/usr/lib/python3.8/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 504, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f9260193a00>, 'Connection to tiny.cc timed out. (connect timeout=5)'))
+INFO: 2019-12-18 10:19:00,594: clock_thread_method() 'clock_thread updates wallpaper'
+INFO: 2019-12-18 10:19:00,595: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg, time: 1576635540.5952654'
+INFO: 2019-12-18 10:19:00,716: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:19:00,747: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:19:00,747: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:19' -fill white -annotate 0x0+60+210 '10:19' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18''
+INFO: 2019-12-18 10:19:00,747: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-90b9132231007cf43620e12e0f26ebce.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:19' -fill white -annotate 0x0+60+210 '10:19' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18' /home/alex/.config/variety/wallpaper/wallpaper-clock-94c546d3b6bd9287ca8aabff304d3afa.jpg'
+INFO: 2019-12-18 10:19:00,933: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg'
+INFO: 2019-12-18 10:19:29,669: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
+ERROR: 2019-12-18 10:19:34,682: server_options_thread() 'Could not fetch Variety serverside options'
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "/usr/lib/python3.7/site-packages/urllib3/util/connection.py", line 80, in create_connection
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 156, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 84, in create_connection
     raise err
-  File "/usr/lib/python3.7/site-packages/urllib3/util/connection.py", line 70, in create_connection
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 74, in create_connection
     sock.connect(sa)
 socket.timeout: timed out
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
-    chunked=chunked)
-  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
-    self._validate_conn(conn)
-  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
-    conn.connect()
-  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 316, in connect
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.8/http/client.py", line 1230, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1276, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1225, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1004, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.8/http/client.py", line 944, in send
+    self.connect()
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 184, in connect
     conn = self._new_conn()
-  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 165, in _new_conn
-    (self.host, self.timeout))
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.VerifiedHTTPSConnection object at 0x7f90c1c0b490>, 'Connection to www.goodreads.com timed out. (connect timeout=5)')
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 161, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPConnection object at 0x7f9268106c10>, 'Connection to tiny.cc timed out. (connect timeout=5)')
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
-    timeout=timeout
-  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/retry.py", line 436, in increment
     raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.goodreads.com', port=443): Max retries exceeded with url: /quotes/tag?utf8=%E2%9C%93&id=faith (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7f90c1c0b490>, 'Connection to www.goodreads.com timed out. (connect timeout=5)'))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f9268106c10>, 'Connection to tiny.cc timed out. (connect timeout=5)'))
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/variety/QuotesEngine.py", line 268, in get_one_quote
-    quotes = plugin["plugin"].get_random()
-  File "/usr/share/variety/plugins/quotes/GoodreadsSource.py", line 58, in get_random
-    return self.get_for_keyword(random.choice(KEYWORDS))[:4]
-  File "/usr/share/variety/plugins/quotes/GoodreadsSource.py", line 79, in get_for_keyword
-    soup = Util.html_soup(url)
-  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 597, in html_soup
-    return bs4.BeautifulSoup(Util.fetch(url, data), "lxml")
-  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 585, in fetch
-    return Util.request(url, data).text
-  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
-    timeout=timeout)
-  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+  File "/usr/lib/python3.8/site-packages/variety/VarietyWindow.py", line 939, in server_options_thread
+    self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 593, in fetch_json
+    return Util.request(url, data).json()
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 565, in request
+    r = requests.request(method=method,
+  File "/usr/lib/python3.8/site-packages/requests/api.py", line 60, in request
     return session.request(method=method, url=url, **kwargs)
-  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 533, in request
     resp = self.send(prep, **send_kwargs)
-  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 646, in send
     r = adapter.send(request, **kwargs)
-  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 504, in send
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 504, in send
     raise ConnectTimeout(e, request=request)
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.goodreads.com', port=443): Max retries exceeded with url: /quotes/tag?utf8=%E2%9C%93&id=faith (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7f90c1c0b490>, 'Connection to www.goodreads.com timed out. (connect timeout=5)'))
-INFO: 2019-12-08 08:27:48,802: prepare_thread() 'Quotes prepared buffer contains 8 quotes, fetching a quote'
-INFO: 2019-12-08 08:27:48,802: get_for_search_url() 'Fetching quotes from Goodreads for search url=http://www.quotationspage.com/random.php'
-INFO: 2019-12-08 08:27:48,825: get_for_search_url() 'Used QuotationsPage url http://www.quotationspage.com/random.php'
-WARNING: 2019-12-08 08:27:48,826: get_from_html() 'QuotationsPage: no quotes found at http://www.quotationspage.com/random.php'
-WARNING: 2019-12-08 08:27:48,826: get_one_quote() 'No quotes for '' for plugin TheQuotationsPage.com'
-INFO: 2019-12-08 08:27:50,828: prepare_thread() 'Quotes prepared buffer contains 9 quotes, fetching a quote'
-INFO: 2019-12-08 08:27:50,828: get_for_keyword() 'Fetching quotes from Goodreads for keyword=men'
-ERROR: 2019-12-08 08:27:57,478: get_one_quote() 'Exception in quote plugin'
+requests.exceptions.ConnectTimeout: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f9268106c10>, 'Connection to tiny.cc timed out. (connect timeout=5)'))
+INFO: 2019-12-18 10:20:00,658: clock_thread_method() 'clock_thread updates wallpaper'
+INFO: 2019-12-18 10:20:00,658: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg, time: 1576635600.6589804'
+INFO: 2019-12-18 10:20:00,796: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:20:00,825: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:20:00,825: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:20' -fill white -annotate 0x0+60+210 '10:20' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18''
+INFO: 2019-12-18 10:20:00,825: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-0b2c3eed74be46ad002e366f1f4f736f.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:20' -fill white -annotate 0x0+60+210 '10:20' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18' /home/alex/.config/variety/wallpaper/wallpaper-clock-8f26b032783ea0b070ea850c6a35d6d1.jpg'
+INFO: 2019-12-18 10:20:00,989: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg'
+INFO: 2019-12-18 10:20:04,714: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
+ERROR: 2019-12-18 10:20:09,729: server_options_thread() 'Could not fetch Variety serverside options'
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "/usr/lib/python3.7/site-packages/urllib3/util/connection.py", line 80, in create_connection
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 156, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 84, in create_connection
     raise err
-  File "/usr/lib/python3.7/site-packages/urllib3/util/connection.py", line 70, in create_connection
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 74, in create_connection
     sock.connect(sa)
 socket.timeout: timed out
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
-    chunked=chunked)
-  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
-    self._validate_conn(conn)
-  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
-    conn.connect()
-  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 316, in connect
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.8/http/client.py", line 1230, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1276, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1225, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1004, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.8/http/client.py", line 944, in send
+    self.connect()
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 184, in connect
     conn = self._new_conn()
-  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 165, in _new_conn
-    (self.host, self.timeout))
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.VerifiedHTTPSConnection object at 0x7f90b00d5fd0>, 'Connection to www.goodreads.com timed out. (connect timeout=5)')
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 161, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPConnection object at 0x7f9268106fa0>, 'Connection to tiny.cc timed out. (connect timeout=5)')
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
-    timeout=timeout
-  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/retry.py", line 436, in increment
     raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.goodreads.com', port=443): Max retries exceeded with url: /quotes/tag?utf8=%E2%9C%93&id=men (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7f90b00d5fd0>, 'Connection to www.goodreads.com timed out. (connect timeout=5)'))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f9268106fa0>, 'Connection to tiny.cc timed out. (connect timeout=5)'))
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/variety/QuotesEngine.py", line 268, in get_one_quote
-    quotes = plugin["plugin"].get_random()
-  File "/usr/share/variety/plugins/quotes/GoodreadsSource.py", line 58, in get_random
-    return self.get_for_keyword(random.choice(KEYWORDS))[:4]
-  File "/usr/share/variety/plugins/quotes/GoodreadsSource.py", line 79, in get_for_keyword
-    soup = Util.html_soup(url)
-  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 597, in html_soup
-    return bs4.BeautifulSoup(Util.fetch(url, data), "lxml")
-  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 585, in fetch
-    return Util.request(url, data).text
-  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
-    timeout=timeout)
-  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+  File "/usr/lib/python3.8/site-packages/variety/VarietyWindow.py", line 939, in server_options_thread
+    self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 593, in fetch_json
+    return Util.request(url, data).json()
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 565, in request
+    r = requests.request(method=method,
+  File "/usr/lib/python3.8/site-packages/requests/api.py", line 60, in request
     return session.request(method=method, url=url, **kwargs)
-  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 533, in request
     resp = self.send(prep, **send_kwargs)
-  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 646, in send
     r = adapter.send(request, **kwargs)
-  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 504, in send
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 504, in send
     raise ConnectTimeout(e, request=request)
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.goodreads.com', port=443): Max retries exceeded with url: /quotes/tag?utf8=%E2%9C%93&id=men (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7f90b00d5fd0>, 'Connection to www.goodreads.com timed out. (connect timeout=5)'))
-INFO: 2019-12-08 08:27:57,480: get_for_search_url() 'Fetching quotes from Goodreads for search url=http://www.quotationspage.com/random.php'
-INFO: 2019-12-08 08:27:57,514: get_for_search_url() 'Used QuotationsPage url http://www.quotationspage.com/random.php'
-WARNING: 2019-12-08 08:27:57,515: get_from_html() 'QuotationsPage: no quotes found at http://www.quotationspage.com/random.php'
-WARNING: 2019-12-08 08:27:57,515: get_one_quote() 'No quotes for '' for plugin TheQuotationsPage.com'
-INFO: 2019-12-08 08:28:00,811: clock_thread_method() 'clock_thread updates wallpaper'
-INFO: 2019-12-08 08:28:00,811: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1568870217921-76a1c44b93c2.jpg, time: 1575764880.8115609'
-INFO: 2019-12-08 08:28:00,932: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
-INFO: 2019-12-08 08:28:00,962: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
-INFO: 2019-12-08 08:28:00,962: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '08:28' -fill white -annotate 0x0+60+210 '08:28' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期日, 十二月 08' -fill white -annotate 0x0+60+160 '星期日, 十二月 08''
-INFO: 2019-12-08 08:28:00,962: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-dcd6049e0d631a3592d4305cf32259a4.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '08:28' -fill white -annotate 0x0+60+210 '08:28' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期日, 十二月 08' -fill white -annotate 0x0+60+160 '星期日, 十二月 08' /home/alex/.config/variety/wallpaper/wallpaper-clock-a1d35a1939719e732920825d70681c89.jpg'
-INFO: 2019-12-08 08:28:01,113: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1568870217921-76a1c44b93c2.jpg'
-INFO: 2019-12-08 08:28:16,376: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
-ERROR: 2019-12-08 08:28:16,450: server_options_thread() 'Could not fetch Variety serverside options'
+requests.exceptions.ConnectTimeout: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f9268106fa0>, 'Connection to tiny.cc timed out. (connect timeout=5)'))
+INFO: 2019-12-18 10:20:39,761: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
+ERROR: 2019-12-18 10:20:44,776: server_options_thread() 'Could not fetch Variety serverside options'
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 939, in server_options_thread
-    self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
-  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 593, in fetch_json
-    return Util.request(url, data).json()
-  File "/usr/lib/python3.7/site-packages/requests/models.py", line 897, in json
-    return complexjson.loads(self.text, **kwargs)
-  File "/usr/lib/python3.7/json/__init__.py", line 348, in loads
-    return _default_decoder.decode(s)
-  File "/usr/lib/python3.7/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "/usr/lib/python3.7/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-INFO: 2019-12-08 08:28:46,459: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
-ERROR: 2019-12-08 08:28:46,518: server_options_thread() 'Could not fetch Variety serverside options'
-Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 939, in server_options_thread
-    self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
-  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 593, in fetch_json
-    return Util.request(url, data).json()
-  File "/usr/lib/python3.7/site-packages/requests/models.py", line 897, in json
-    return complexjson.loads(self.text, **kwargs)
-  File "/usr/lib/python3.7/json/__init__.py", line 348, in loads
-    return _default_decoder.decode(s)
-  File "/usr/lib/python3.7/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "/usr/lib/python3.7/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-INFO: 2019-12-08 08:29:00,888: clock_thread_method() 'clock_thread updates wallpaper'
-INFO: 2019-12-08 08:29:00,888: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1568870217921-76a1c44b93c2.jpg, time: 1575764940.8887427'
-INFO: 2019-12-08 08:29:00,990: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
-INFO: 2019-12-08 08:29:01,019: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
-INFO: 2019-12-08 08:29:01,019: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '08:29' -fill white -annotate 0x0+60+210 '08:29' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期日, 十二月 08' -fill white -annotate 0x0+60+160 '星期日, 十二月 08''
-INFO: 2019-12-08 08:29:01,019: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-6bad7efb08fc878cc47c5e4ee6635f91.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '08:29' -fill white -annotate 0x0+60+210 '08:29' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期日, 十二月 08' -fill white -annotate 0x0+60+160 '星期日, 十二月 08' /home/alex/.config/variety/wallpaper/wallpaper-clock-6cff6cbb922c66c933899d84476acd05.jpg'
-INFO: 2019-12-08 08:29:01,171: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1568870217921-76a1c44b93c2.jpg'
-INFO: 2019-12-08 08:29:16,548: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
-ERROR: 2019-12-08 08:29:16,593: server_options_thread() 'Could not fetch Variety serverside options'
-Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/variety/VarietyWindow.py", line 939, in server_options_thread
-    self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
-  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 593, in fetch_json
-    return Util.request(url, data).json()
-  File "/usr/lib/python3.7/site-packages/requests/models.py", line 897, in json
-    return complexjson.loads(self.text, **kwargs)
-  File "/usr/lib/python3.7/json/__init__.py", line 348, in loads
-    return _default_decoder.decode(s)
-  File "/usr/lib/python3.7/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "/usr/lib/python3.7/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-INFO: 2019-12-08 08:30:00,958: clock_thread_method() 'clock_thread updates wallpaper'
-INFO: 2019-12-08 08:30:00,959: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1568870217921-76a1c44b93c2.jpg, time: 1575765000.9594128'
-INFO: 2019-12-08 08:30:01,064: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
-INFO: 2019-12-08 08:30:01,093: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
-INFO: 2019-12-08 08:30:01,093: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '08:30' -fill white -annotate 0x0+60+210 '08:30' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期日, 十二月 08' -fill white -annotate 0x0+60+160 '星期日, 十二月 08''
-INFO: 2019-12-08 08:30:01,093: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-2ba534fdb3e390606785354be03fd512.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '08:30' -fill white -annotate 0x0+60+210 '08:30' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期日, 十二月 08' -fill white -annotate 0x0+60+160 '星期日, 十二月 08' /home/alex/.config/variety/wallpaper/wallpaper-clock-6f58df0e0a3d601155be840f97474da2.jpg'
-INFO: 2019-12-08 08:30:01,253: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1568870217921-76a1c44b93c2.jpg'
-INFO: 2019-12-08 08:31:00,033: clock_thread_method() 'clock_thread updates wallpaper'
-INFO: 2019-12-08 08:31:00,035: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1568870217921-76a1c44b93c2.jpg, time: 1575765060.0351331'
-INFO: 2019-12-08 08:31:00,139: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
-INFO: 2019-12-08 08:31:00,169: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
-INFO: 2019-12-08 08:31:00,169: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '08:31' -fill white -annotate 0x0+60+210 '08:31' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期日, 十二月 08' -fill white -annotate 0x0+60+160 '星期日, 十二月 08''
-INFO: 2019-12-08 08:31:00,169: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-e9c2ec90817348650ab6c6dd2e2557fb.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '08:31' -fill white -annotate 0x0+60+210 '08:31' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期日, 十二月 08' -fill white -annotate 0x0+60+160 '星期日, 十二月 08' /home/alex/.config/variety/wallpaper/wallpaper-clock-e989163e71297b0f8df0751ddf325468.jpg'
-INFO: 2019-12-08 08:31:00,319: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1568870217921-76a1c44b93c2.jpg'
-INFO: 2019-12-08 08:31:55,753: download_one() 'Downloading an image from NASA's Astro Pic of the Day, nasa_apod'
-INFO: 2019-12-08 08:31:55,754: download_one() 'Queue size: 0'
-INFO: 2019-12-08 08:31:55,754: fill_queue() 'Filling APOD queue from Archive'
-INFO: 2019-12-08 08:31:56,232: fill_queue() 'APOD queue populated with 0 URLs'
-INFO: 2019-12-08 08:31:56,232: download_one() 'APOD Queue still empty after fill request - probably nothing more to download'
-INFO: 2019-12-08 08:32:00,113: clock_thread_method() 'clock_thread updates wallpaper'
-INFO: 2019-12-08 08:32:00,113: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1568870217921-76a1c44b93c2.jpg, time: 1575765120.1138387'
-INFO: 2019-12-08 08:32:00,221: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
-INFO: 2019-12-08 08:32:00,250: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
-INFO: 2019-12-08 08:32:00,250: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '08:32' -fill white -annotate 0x0+60+210 '08:32' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期日, 十二月 08' -fill white -annotate 0x0+60+160 '星期日, 十二月 08''
-INFO: 2019-12-08 08:32:00,250: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-f92f1403db1df6d269433d3aa522d39c.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '08:32' -fill white -annotate 0x0+60+210 '08:32' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期日, 十二月 08' -fill white -annotate 0x0+60+160 '星期日, 十二月 08' /home/alex/.config/variety/wallpaper/wallpaper-clock-136b4d5bbb29f19ee4756e2c5af52c44.jpg'
-INFO: 2019-12-08 08:32:00,404: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1568870217921-76a1c44b93c2.jpg'
-INFO: 2019-12-08 08:32:04,194: regular_change_thread() 'Quotes regular_change changes quote'
-INFO: 2019-12-08 08:32:04,195: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1568870217921-76a1c44b93c2.jpg, time: 1575765124.1950746'
-INFO: 2019-12-08 08:32:04,195: prepare_thread() 'Quotes prepared buffer contains 9 quotes, fetching a quote'
-INFO: 2019-12-08 08:32:04,195: get_for_keyword() 'Fetching quotes from Goodreads for keyword=education'
-INFO: 2019-12-08 08:32:04,302: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
-INFO: 2019-12-08 08:32:04,339: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
-INFO: 2019-12-08 08:32:04,339: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '08:32' -fill white -annotate 0x0+60+210 '08:32' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期日, 十二月 08' -fill white -annotate 0x0+60+160 '星期日, 十二月 08''
-INFO: 2019-12-08 08:32:04,339: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-ff434cd6d7bf9c07968b113373913da0.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '08:32' -fill white -annotate 0x0+60+210 '08:32' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期日, 十二月 08' -fill white -annotate 0x0+60+160 '星期日, 十二月 08' /home/alex/.config/variety/wallpaper/wallpaper-clock-c7aaed636b8af2a23a749a8cfc65e77b.jpg'
-INFO: 2019-12-08 08:32:04,490: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1568870217921-76a1c44b93c2.jpg'
-ERROR: 2019-12-08 08:32:11,493: get_one_quote() 'Exception in quote plugin'
-Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 160, in _new_conn
-    (self._dns_host, self.port), self.timeout, **extra_kw)
-  File "/usr/lib/python3.7/site-packages/urllib3/util/connection.py", line 80, in create_connection
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 156, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 84, in create_connection
     raise err
-  File "/usr/lib/python3.7/site-packages/urllib3/util/connection.py", line 70, in create_connection
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 74, in create_connection
     sock.connect(sa)
 socket.timeout: timed out
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 603, in urlopen
-    chunked=chunked)
-  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 344, in _make_request
-    self._validate_conn(conn)
-  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
-    conn.connect()
-  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 316, in connect
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.8/http/client.py", line 1230, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1276, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1225, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1004, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.8/http/client.py", line 944, in send
+    self.connect()
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 184, in connect
     conn = self._new_conn()
-  File "/usr/lib/python3.7/site-packages/urllib3/connection.py", line 165, in _new_conn
-    (self.host, self.timeout))
-urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.VerifiedHTTPSConnection object at 0x7f90c1c09c10>, 'Connection to www.goodreads.com timed out. (connect timeout=5)')
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 161, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPConnection object at 0x7f9268106bb0>, 'Connection to tiny.cc timed out. (connect timeout=5)')
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
-    timeout=timeout
-  File "/usr/lib/python3.7/site-packages/urllib3/connectionpool.py", line 641, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "/usr/lib/python3.7/site-packages/urllib3/util/retry.py", line 399, in increment
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/retry.py", line 436, in increment
     raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.goodreads.com', port=443): Max retries exceeded with url: /quotes/tag?utf8=%E2%9C%93&id=education (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7f90c1c09c10>, 'Connection to www.goodreads.com timed out. (connect timeout=5)'))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f9268106bb0>, 'Connection to tiny.cc timed out. (connect timeout=5)'))
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/usr/lib/python3.7/site-packages/variety/QuotesEngine.py", line 268, in get_one_quote
+  File "/usr/lib/python3.8/site-packages/variety/VarietyWindow.py", line 939, in server_options_thread
+    self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 593, in fetch_json
+    return Util.request(url, data).json()
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 565, in request
+    r = requests.request(method=method,
+  File "/usr/lib/python3.8/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 504, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f9268106bb0>, 'Connection to tiny.cc timed out. (connect timeout=5)'))
+INFO: 2019-12-18 10:21:00,724: clock_thread_method() 'clock_thread updates wallpaper'
+INFO: 2019-12-18 10:21:00,725: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg, time: 1576635660.72521'
+INFO: 2019-12-18 10:21:00,849: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:21:00,877: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:21:00,877: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:21' -fill white -annotate 0x0+60+210 '10:21' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18''
+INFO: 2019-12-18 10:21:00,877: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-be986b5fafe8bd44654af1704fa5e3f0.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:21' -fill white -annotate 0x0+60+210 '10:21' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18' /home/alex/.config/variety/wallpaper/wallpaper-clock-27224be9c7ed49141fbb2b91367ea2a0.jpg'
+INFO: 2019-12-18 10:21:01,033: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg'
+INFO: 2019-12-18 10:22:00,793: clock_thread_method() 'clock_thread updates wallpaper'
+INFO: 2019-12-18 10:22:00,794: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg, time: 1576635720.79459'
+INFO: 2019-12-18 10:22:00,960: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:22:00,989: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:22:00,989: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:22' -fill white -annotate 0x0+60+210 '10:22' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18''
+INFO: 2019-12-18 10:22:00,989: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-0b92f87e961d0729263622c885510ef1.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:22' -fill white -annotate 0x0+60+210 '10:22' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18' /home/alex/.config/variety/wallpaper/wallpaper-clock-4cfb6f8d85972719196c75a1e60d4a81.jpg'
+INFO: 2019-12-18 10:22:01,157: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg'
+INFO: 2019-12-18 10:22:59,551: download_one() 'Downloading a random image from desktoppr.co'
+INFO: 2019-12-18 10:23:00,862: clock_thread_method() 'clock_thread updates wallpaper'
+INFO: 2019-12-18 10:23:00,862: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg, time: 1576635780.862817'
+INFO: 2019-12-18 10:23:01,022: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:23:01,050: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:23:01,050: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:23' -fill white -annotate 0x0+60+210 '10:23' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18''
+INFO: 2019-12-18 10:23:01,050: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-db483943573d0de4dbe034c62c0a4807.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:23' -fill white -annotate 0x0+60+210 '10:23' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18' /home/alex/.config/variety/wallpaper/wallpaper-clock-f703bc4858b9219a2df4708b4015ba60.jpg'
+INFO: 2019-12-18 10:23:01,208: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg'
+ERROR: 2019-12-18 10:23:01,390: request() 'SSL Error for url https://api.desktoppr.co/1/wallpapers/random:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 994, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 386, in connect
+    self.sock = ssl_wrap_socket(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/ssl_.py", line 370, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.8/ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/usr/lib/python3.8/ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.8/ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1108)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1108)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 565, in request
+    r = requests.request(method=method,
+  File "/usr/lib/python3.8/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1108)')))
+ERROR: 2019-12-18 10:23:01,394: download_thread() 'Could not download wallpaper:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 994, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 386, in connect
+    self.sock = ssl_wrap_socket(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/ssl_.py", line 370, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3.8/ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/usr/lib/python3.8/ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.8/ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1108)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1108)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/variety/VarietyWindow.py", line 986, in download_thread
+    self.download_one_from(downloader)
+  File "/usr/lib/python3.8/site-packages/variety/VarietyWindow.py", line 1018, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3.8/site-packages/variety/DesktopprDownloader.py", line 35, in download_one
+    response = Util.fetch_json(self.location)
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 593, in fetch_json
+    return Util.request(url, data).json()
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 565, in request
+    r = requests.request(method=method,
+  File "/usr/lib/python3.8/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1108)')))
+INFO: 2019-12-18 10:23:04,550: regular_change_thread() 'Quotes regular_change changes quote'
+INFO: 2019-12-18 10:23:04,551: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg, time: 1576635784.5514755'
+INFO: 2019-12-18 10:23:04,552: prepare_thread() 'Quotes prepared buffer contains 9 quotes, fetching a quote'
+INFO: 2019-12-18 10:23:04,676: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:23:04,712: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:23:04,712: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:23' -fill white -annotate 0x0+60+210 '10:23' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18''
+INFO: 2019-12-18 10:23:04,712: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-11e1417de62bdd02dfc45476e26e54b1.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:23' -fill white -annotate 0x0+60+210 '10:23' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18' /home/alex/.config/variety/wallpaper/wallpaper-clock-affa00485ae20aabacf3b8f43b0aa80b.jpg'
+INFO: 2019-12-18 10:23:04,872: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg'
+INFO: 2019-12-18 10:24:00,932: clock_thread_method() 'clock_thread updates wallpaper'
+INFO: 2019-12-18 10:24:00,933: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg, time: 1576635840.9335065'
+INFO: 2019-12-18 10:24:01,059: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:24:01,087: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:24:01,087: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:24' -fill white -annotate 0x0+60+210 '10:24' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18''
+INFO: 2019-12-18 10:24:01,087: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-155a7627c38138aaecfc0e49b36b564a.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:24' -fill white -annotate 0x0+60+210 '10:24' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18' /home/alex/.config/variety/wallpaper/wallpaper-clock-3e11b716fe7e14eb9b84dd9f6bfcca30.jpg'
+INFO: 2019-12-18 10:24:01,244: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg'
+INFO: 2019-12-18 10:25:00,999: clock_thread_method() 'clock_thread updates wallpaper'
+INFO: 2019-12-18 10:25:01,001: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg, time: 1576635901.0012538'
+INFO: 2019-12-18 10:25:01,124: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:25:01,152: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:25:01,152: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:25' -fill white -annotate 0x0+60+210 '10:25' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18''
+INFO: 2019-12-18 10:25:01,152: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-0c73e7aedb6ab6c5b0a2e368684b4da7.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:25' -fill white -annotate 0x0+60+210 '10:25' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18' /home/alex/.config/variety/wallpaper/wallpaper-clock-d2206124a976658c6c8c1a37250b4377.jpg'
+INFO: 2019-12-18 10:25:01,309: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg'
+INFO: 2019-12-18 10:26:00,066: clock_thread_method() 'clock_thread updates wallpaper'
+INFO: 2019-12-18 10:26:00,068: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg, time: 1576635960.0681899'
+INFO: 2019-12-18 10:26:00,227: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:26:00,257: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:26:00,257: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:26' -fill white -annotate 0x0+60+210 '10:26' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18''
+INFO: 2019-12-18 10:26:00,257: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-566b8874fefa8f6c00fc2cdf0083a769.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:26' -fill white -annotate 0x0+60+210 '10:26' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18' /home/alex/.config/variety/wallpaper/wallpaper-clock-7d3a4fd043af4c7ba4dd07b6c380caf4.jpg'
+INFO: 2019-12-18 10:26:00,417: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg'
+INFO: 2019-12-18 10:27:00,142: clock_thread_method() 'clock_thread updates wallpaper'
+INFO: 2019-12-18 10:27:00,144: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg, time: 1576636020.1442647'
+INFO: 2019-12-18 10:27:00,267: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:27:00,295: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:27:00,296: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:27' -fill white -annotate 0x0+60+210 '10:27' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18''
+INFO: 2019-12-18 10:27:00,296: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-ef677be51ae578c0a1eabc4f958f5766.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:27' -fill white -annotate 0x0+60+210 '10:27' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18' /home/alex/.config/variety/wallpaper/wallpaper-clock-53312dedfd8777ab7d45e0b0599ad40d.jpg'
+INFO: 2019-12-18 10:27:00,453: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg'
+INFO: 2019-12-18 10:27:59,551: download_one() 'Downloading an image from NASA's Astro Pic of the Day, nasa_apod'
+INFO: 2019-12-18 10:27:59,553: download_one() 'Queue size: 0'
+INFO: 2019-12-18 10:27:59,554: fill_queue() 'Filling APOD queue from Archive'
+INFO: 2019-12-18 10:28:00,219: clock_thread_method() 'clock_thread updates wallpaper'
+INFO: 2019-12-18 10:28:00,220: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg, time: 1576636080.2207818'
+INFO: 2019-12-18 10:28:00,382: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:28:00,413: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:28:00,413: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:28' -fill white -annotate 0x0+60+210 '10:28' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18''
+INFO: 2019-12-18 10:28:00,413: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-4983f3a517375b11325861a7436c6a2e.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:28' -fill white -annotate 0x0+60+210 '10:28' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18' /home/alex/.config/variety/wallpaper/wallpaper-clock-b51adf186aed17b2f418e1ab84953537.jpg'
+INFO: 2019-12-18 10:28:00,596: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg'
+INFO: 2019-12-18 10:28:04,551: regular_change_thread() 'Quotes regular_change changes quote'
+INFO: 2019-12-18 10:28:04,552: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg, time: 1576636084.5526805'
+INFO: 2019-12-18 10:28:04,553: prepare_thread() 'Quotes prepared buffer contains 9 quotes, fetching a quote'
+INFO: 2019-12-18 10:28:04,553: get_for_keyword() 'Fetching quotes from Goodreads for keyword=grief'
+INFO: 2019-12-18 10:28:04,712: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:28:04,745: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:28:04,745: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:28' -fill white -annotate 0x0+60+210 '10:28' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18''
+INFO: 2019-12-18 10:28:04,745: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-07f731ca6cd9edd791c9f9bf62763324.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:28' -fill white -annotate 0x0+60+210 '10:28' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18' /home/alex/.config/variety/wallpaper/wallpaper-clock-a89d7b1747afd63569adc82a3845deaf.jpg'
+INFO: 2019-12-18 10:28:04,918: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg'
+ERROR: 2019-12-18 10:28:10,139: get_one_quote() 'Exception in quote plugin'
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 156, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 994, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 334, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 161, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.VerifiedHTTPSConnection object at 0x7f9268537910>, 'Connection to www.goodreads.com timed out. (connect timeout=5)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.goodreads.com', port=443): Max retries exceeded with url: /quotes/tag?utf8=%E2%9C%93&id=grief (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7f9268537910>, 'Connection to www.goodreads.com timed out. (connect timeout=5)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/variety/QuotesEngine.py", line 268, in get_one_quote
     quotes = plugin["plugin"].get_random()
   File "/usr/share/variety/plugins/quotes/GoodreadsSource.py", line 58, in get_random
     return self.get_for_keyword(random.choice(KEYWORDS))[:4]
   File "/usr/share/variety/plugins/quotes/GoodreadsSource.py", line 79, in get_for_keyword
     soup = Util.html_soup(url)
-  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 597, in html_soup
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 597, in html_soup
     return bs4.BeautifulSoup(Util.fetch(url, data), "lxml")
-  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 585, in fetch
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 585, in fetch
     return Util.request(url, data).text
-  File "/usr/lib/python3.7/site-packages/variety/Util.py", line 571, in request
-    timeout=timeout)
-  File "/usr/lib/python3.7/site-packages/requests/api.py", line 60, in request
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 565, in request
+    r = requests.request(method=method,
+  File "/usr/lib/python3.8/site-packages/requests/api.py", line 60, in request
     return session.request(method=method, url=url, **kwargs)
-  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 533, in request
     resp = self.send(prep, **send_kwargs)
-  File "/usr/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 646, in send
     r = adapter.send(request, **kwargs)
-  File "/usr/lib/python3.7/site-packages/requests/adapters.py", line 504, in send
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 504, in send
     raise ConnectTimeout(e, request=request)
-requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.goodreads.com', port=443): Max retries exceeded with url: /quotes/tag?utf8=%E2%9C%93&id=education (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7f90c1c09c10>, 'Connection to www.goodreads.com timed out. (connect timeout=5)'))
-INFO: 2019-12-08 08:33:00,191: clock_thread_method() 'clock_thread updates wallpaper'
-INFO: 2019-12-08 08:33:00,192: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1568870217921-76a1c44b93c2.jpg, time: 1575765180.1920683'
-INFO: 2019-12-08 08:33:00,297: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
-INFO: 2019-12-08 08:33:00,326: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
-INFO: 2019-12-08 08:33:00,326: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '08:33' -fill white -annotate 0x0+60+210 '08:33' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期日, 十二月 08' -fill white -annotate 0x0+60+160 '星期日, 十二月 08''
-INFO: 2019-12-08 08:33:00,326: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-1cf1df5a853e61eb5e1504cafcee83b4.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '08:33' -fill white -annotate 0x0+60+210 '08:33' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期日, 十二月 08' -fill white -annotate 0x0+60+160 '星期日, 十二月 08' /home/alex/.config/variety/wallpaper/wallpaper-clock-89240d8bf8af0e04daccd17cf29a018b.jpg'
-INFO: 2019-12-08 08:33:00,477: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1568870217921-76a1c44b93c2.jpg'
-INFO: 2019-12-08 08:34:00,268: clock_thread_method() 'clock_thread updates wallpaper'
-INFO: 2019-12-08 08:34:00,269: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1568870217921-76a1c44b93c2.jpg, time: 1575765240.2698102'
-INFO: 2019-12-08 08:34:00,374: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
-INFO: 2019-12-08 08:34:00,404: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
-INFO: 2019-12-08 08:34:00,404: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '08:34' -fill white -annotate 0x0+60+210 '08:34' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期日, 十二月 08' -fill white -annotate 0x0+60+160 '星期日, 十二月 08''
-INFO: 2019-12-08 08:34:00,404: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-5a2140d3ce1dbc26b7b4e8c413a6202d.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '08:34' -fill white -annotate 0x0+60+210 '08:34' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期日, 十二月 08' -fill white -annotate 0x0+60+160 '星期日, 十二月 08' /home/alex/.config/variety/wallpaper/wallpaper-clock-dca5554dcb128bfa7a417ef9eab3e618.jpg'
-INFO: 2019-12-08 08:34:00,590: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1568870217921-76a1c44b93c2.jpg'
-INFO: 2019-12-08 08:35:00,344: clock_thread_method() 'clock_thread updates wallpaper'
-INFO: 2019-12-08 08:35:00,345: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1568870217921-76a1c44b93c2.jpg, time: 1575765300.345749'
-INFO: 2019-12-08 08:35:00,487: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
-INFO: 2019-12-08 08:35:00,516: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
-INFO: 2019-12-08 08:35:00,516: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '08:35' -fill white -annotate 0x0+60+210 '08:35' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期日, 十二月 08' -fill white -annotate 0x0+60+160 '星期日, 十二月 08''
-INFO: 2019-12-08 08:35:00,516: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-0bffb68e1c7eb0afd3ca7c6873d9388f.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '08:35' -fill white -annotate 0x0+60+210 '08:35' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期日, 十二月 08' -fill white -annotate 0x0+60+160 '星期日, 十二月 08' /home/alex/.config/variety/wallpaper/wallpaper-clock-ce76b5e358478a90a6114312d9bbc662.jpg'
-INFO: 2019-12-08 08:35:00,667: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1568870217921-76a1c44b93c2.jpg'
-INFO: 2019-12-08 08:36:00,421: clock_thread_method() 'clock_thread updates wallpaper'
-INFO: 2019-12-08 08:36:00,422: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1568870217921-76a1c44b93c2.jpg, time: 1575765360.4224381'
-INFO: 2019-12-08 08:36:00,527: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
-INFO: 2019-12-08 08:36:00,556: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
-INFO: 2019-12-08 08:36:00,556: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '08:36' -fill white -annotate 0x0+60+210 '08:36' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期日, 十二月 08' -fill white -annotate 0x0+60+160 '星期日, 十二月 08''
-INFO: 2019-12-08 08:36:00,556: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-5490b9ce013905f6ea7b555b65873598.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '08:36' -fill white -annotate 0x0+60+210 '08:36' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期日, 十二月 08' -fill white -annotate 0x0+60+160 '星期日, 十二月 08' /home/alex/.config/variety/wallpaper/wallpaper-clock-fd366513e488b05ac10102ea1baa478d.jpg'
-INFO: 2019-12-08 08:36:00,707: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1568870217921-76a1c44b93c2.jpg'
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.goodreads.com', port=443): Max retries exceeded with url: /quotes/tag?utf8=%E2%9C%93&id=grief (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7f9268537910>, 'Connection to www.goodreads.com timed out. (connect timeout=5)'))
+INFO: 2019-12-18 10:28:21,406: fill_queue() 'APOD queue populated with 13 URLs'
+INFO: 2019-12-18 10:28:21,406: download_one() 'APOD URL: http://apod.nasa.gov/apod/ap191217.html'
+INFO: 2019-12-18 10:28:23,862: download_one() 'Image URL: http://apod.nasa.gov/apod/image/1912/Horsehead_Hanson_2604.jpg'
+INFO: 2019-12-18 10:28:23,863: save_locally() 'Origin URL: http://apod.nasa.gov/apod/ap191217.html'
+INFO: 2019-12-18 10:28:23,863: save_locally() 'Image URL: http://apod.nasa.gov/apod/image/1912/Horsehead_Hanson_2604.jpg'
+INFO: 2019-12-18 10:28:23,863: save_locally() 'Local name: /home/alex/Pictures/mywallpapers/nasa_apod/Horsehead_Hanson_2604.jpg'
+INFO: 2019-12-18 10:28:23,863: save_locally() 'File already exists, skip downloading'
+INFO: 2019-12-18 10:29:00,283: clock_thread_method() 'clock_thread updates wallpaper'
+INFO: 2019-12-18 10:29:00,283: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg, time: 1576636140.2837648'
+INFO: 2019-12-18 10:29:00,446: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:29:00,478: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:29:00,478: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:29' -fill white -annotate 0x0+60+210 '10:29' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18''
+INFO: 2019-12-18 10:29:00,478: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-6d5de39ce0145936b46af36c8d0e21de.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:29' -fill white -annotate 0x0+60+210 '10:29' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18' /home/alex/.config/variety/wallpaper/wallpaper-clock-30c7d548bb2cc9a2b7a296bfebdf7dbd.jpg'
+INFO: 2019-12-18 10:29:00,663: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg'
+INFO: 2019-12-18 10:30:00,348: clock_thread_method() 'clock_thread updates wallpaper'
+INFO: 2019-12-18 10:30:00,349: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg, time: 1576636200.3497171'
+INFO: 2019-12-18 10:30:00,512: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:30:00,543: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:30:00,543: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:30' -fill white -annotate 0x0+60+210 '10:30' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18''
+INFO: 2019-12-18 10:30:00,543: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-c6169b8e044cb5a41ca328bac8b91c17.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:30' -fill white -annotate 0x0+60+210 '10:30' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18' /home/alex/.config/variety/wallpaper/wallpaper-clock-dd006fce01002b172d113596ee8818e1.jpg'
+INFO: 2019-12-18 10:30:00,720: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg'
+INFO: 2019-12-18 10:31:00,415: clock_thread_method() 'clock_thread updates wallpaper'
+INFO: 2019-12-18 10:31:00,416: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg, time: 1576636260.4161367'
+INFO: 2019-12-18 10:31:00,570: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:31:00,603: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:31:00,603: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:31' -fill white -annotate 0x0+60+210 '10:31' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18''
+INFO: 2019-12-18 10:31:00,603: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-4eedf904dd369ba50a0cc1b3baaaae9a.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:31' -fill white -annotate 0x0+60+210 '10:31' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18' /home/alex/.config/variety/wallpaper/wallpaper-clock-2ff146883b06779f5edce5b9ded304e4.jpg'
+INFO: 2019-12-18 10:31:00,791: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg'
+INFO: 2019-12-18 10:32:00,479: clock_thread_method() 'clock_thread updates wallpaper'
+INFO: 2019-12-18 10:32:00,480: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg, time: 1576636320.480055'
+INFO: 2019-12-18 10:32:00,623: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:32:00,657: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:32:00,657: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:32' -fill white -annotate 0x0+60+210 '10:32' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18''
+INFO: 2019-12-18 10:32:00,657: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-80dde50580fe35450fc65e8a80d826b1.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:32' -fill white -annotate 0x0+60+210 '10:32' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18' /home/alex/.config/variety/wallpaper/wallpaper-clock-5d2fafa3180eeb02c8233b89a7173989.jpg'
+INFO: 2019-12-18 10:32:00,846: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg'
+INFO: 2019-12-18 10:32:59,551: parse_server_options() 'Flickr: parsing serverside options'
+ERROR: 2019-12-18 10:32:59,552: parse_server_options() 'Could not parse Flickr serverside options, using defaults 60, 600'
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/variety/Downloader.py", line 143, in parse_server_options
+    options = self.parent.server_options[key]
+KeyError: 'flickr'
+INFO: 2019-12-18 10:32:59,553: download_one() 'Downloading an image from Flickr, user:www.flickr.com/photos/peter-levi/;user_id:93647178@N00;'
+INFO: 2019-12-18 10:32:59,553: download_one() 'Queue size: 0'
+INFO: 2019-12-18 10:32:59,553: fill_queue() 'Filling Flickr download queue: user:www.flickr.com/photos/peter-levi/;user_id:93647178@N00;'
+INFO: 2019-12-18 10:32:59,553: fetch() 'Making flickr API call: https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=0553a848c09bcfd21d3a984d9408c04e&per_page=500&tag_mode=all&format=json&nojsoncallback=1&user_id=93647178@N00'
+INFO: 2019-12-18 10:33:00,541: clock_thread_method() 'clock_thread updates wallpaper'
+INFO: 2019-12-18 10:33:00,542: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg, time: 1576636380.5426717'
+INFO: 2019-12-18 10:33:00,705: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:33:00,738: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:33:00,738: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:33' -fill white -annotate 0x0+60+210 '10:33' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18''
+INFO: 2019-12-18 10:33:00,738: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-751a9c905035bbda2fe4298a62d62c6d.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:33' -fill white -annotate 0x0+60+210 '10:33' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18' /home/alex/.config/variety/wallpaper/wallpaper-clock-a6f380eb2ded7f72e1500bde6851bc31.jpg'
+INFO: 2019-12-18 10:33:00,922: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg'
+INFO: 2019-12-18 10:33:04,552: regular_change_thread() 'Quotes regular_change changes quote'
+INFO: 2019-12-18 10:33:04,553: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg, time: 1576636384.5533977'
+INFO: 2019-12-18 10:33:04,553: prepare_thread() 'Quotes prepared buffer contains 9 quotes, fetching a quote'
+ERROR: 2019-12-18 10:33:04,573: download_thread() 'Could not download wallpaper:'
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 156, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/usr/lib/python3.8/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] 网络不可达
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 994, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 334, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3.8/site-packages/urllib3/connection.py", line 168, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x7f922deb3a90>: Failed to establish a new connection: [Errno 101] 网络不可达
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.8/site-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.8/site-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.flickr.com', port=443): Max retries exceeded with url: /services/rest/?method=flickr.photos.search&api_key=0553a848c09bcfd21d3a984d9408c04e&per_page=500&tag_mode=all&format=json&nojsoncallback=1&user_id=93647178@N00 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f922deb3a90>: Failed to establish a new connection: [Errno 101] 网络不可达'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/site-packages/variety/VarietyWindow.py", line 986, in download_thread
+    self.download_one_from(downloader)
+  File "/usr/lib/python3.8/site-packages/variety/VarietyWindow.py", line 1018, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3.8/site-packages/variety/FlickrDownloader.py", line 142, in download_one
+    self.fill_queue()
+  File "/usr/lib/python3.8/site-packages/variety/FlickrDownloader.py", line 165, in fill_queue
+    resp = FlickrDownloader.fetch(call)
+  File "/usr/lib/python3.8/site-packages/variety/FlickrDownloader.py", line 60, in fetch
+    return Util.fetch_json(call)
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 593, in fetch_json
+    return Util.request(url, data).json()
+  File "/usr/lib/python3.8/site-packages/variety/Util.py", line 565, in request
+    r = requests.request(method=method,
+  File "/usr/lib/python3.8/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.flickr.com', port=443): Max retries exceeded with url: /services/rest/?method=flickr.photos.search&api_key=0553a848c09bcfd21d3a984d9408c04e&per_page=500&tag_mode=all&format=json&nojsoncallback=1&user_id=93647178@N00 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f922deb3a90>: Failed to establish a new connection: [Errno 101] 网络不可达'))
+INFO: 2019-12-18 10:33:04,714: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:33:04,747: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:33:04,747: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:33' -fill white -annotate 0x0+60+210 '10:33' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18''
+INFO: 2019-12-18 10:33:04,747: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-5396cf6bd05ef85c25cedd2d5b004d24.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:33' -fill white -annotate 0x0+60+210 '10:33' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18' /home/alex/.config/variety/wallpaper/wallpaper-clock-98a16963c8b76b069cc52e38cdca4bb2.jpg'
+INFO: 2019-12-18 10:33:04,930: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg'
+INFO: 2019-12-18 10:34:00,606: clock_thread_method() 'clock_thread updates wallpaper'
+INFO: 2019-12-18 10:34:00,607: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg, time: 1576636440.6072054'
+INFO: 2019-12-18 10:34:00,763: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:34:00,796: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:34:00,796: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:34' -fill white -annotate 0x0+60+210 '10:34' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18''
+INFO: 2019-12-18 10:34:00,796: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-2ffcad68baacbae65a913aeab7a4605f.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:34' -fill white -annotate 0x0+60+210 '10:34' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18' /home/alex/.config/variety/wallpaper/wallpaper-clock-a69bee863c4b3e012813d49cbd773a5e.jpg'
+INFO: 2019-12-18 10:34:00,987: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg'
+INFO: 2019-12-18 10:35:00,669: clock_thread_method() 'clock_thread updates wallpaper'
+INFO: 2019-12-18 10:35:00,670: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg, time: 1576636500.6708605'
+INFO: 2019-12-18 10:35:00,826: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:35:00,860: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:35:00,861: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:35' -fill white -annotate 0x0+60+210 '10:35' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18''
+INFO: 2019-12-18 10:35:00,861: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-16c1627b08ca7cf2b963db64dfcd6b7c.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:35' -fill white -annotate 0x0+60+210 '10:35' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18' /home/alex/.config/variety/wallpaper/wallpaper-clock-3ed8d55afc2b97a85ac914a14fde6166.jpg'
+INFO: 2019-12-18 10:35:01,044: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg'
+INFO: 2019-12-18 10:36:00,735: clock_thread_method() 'clock_thread updates wallpaper'
+INFO: 2019-12-18 10:36:00,737: do_set_wp() 'Calling do_set_wp with /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg, time: 1576636560.7371526'
+INFO: 2019-12-18 10:36:00,897: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:36:00,932: compute_trimmed_offsets() 'Trimmed offsets debug info: w:1920, h:1080, ratio:1.777778, iw:1920, ih:1280, scw:1920, sch:1280, ho:0, vo:100'
+INFO: 2019-12-18 10:36:00,932: build_imagemagick_clock_cmd() 'Applying clock filter: -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:36' -fill white -annotate 0x0+60+210 '10:36' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18''
+INFO: 2019-12-18 10:36:00,932: build_imagemagick_clock_cmd() 'ImageMagick clock cmd: convert /home/alex/.config/variety/wallpaper/wallpaper-quote-6e954dce5abdb7d8b299ab8ec6d49ff1.jpg -scale 1920x1080^ -density 100 -font `fc-match -f '%{file[0]}' 'Sans:Italic:140'` -pointsize 140 -gravity SouthEast -fill '#00000044' -annotate 0x0+58+208 '10:36' -fill white -annotate 0x0+60+210 '10:36' -font `fc-match -f '%{file[0]}' 'Sans:Bold:30'` -pointsize 30 -fill '#00000044' -annotate 0x0+58+158 '星期三, 十二月 18' -fill white -annotate 0x0+60+160 '星期三, 十二月 18' /home/alex/.config/variety/wallpaper/wallpaper-clock-9a96ff94ab994d5cb792e19fa381d640.jpg'
+INFO: 2019-12-18 10:36:01,130: update_indicator() 'Setting file info to: /home/alex/Pictures/mywallpapers/Unsplash/photo-1567239334464-95411e8c7c58.jpg'

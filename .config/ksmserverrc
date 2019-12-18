@@ -1,6 +1,3 @@
-[General]
-screenCount=1
-
 [LegacySession: saved at previous logout]
 count=0
 
@@ -8,19 +5,20 @@ count=0
 clientId1=108edcc878000156787469700000031580007
 clientId2=108edcc878000156769870900000033540010
 clientId3=108edcc878000156769870900000033540011
-clientId4=108edcc878000157026122600000015470012
-clientId5=108edcc878000157554971900000009090011
+clientId4=108edcc878000157644290200000008980010
+clientId5=108edcc878000157662662200000009200009
 count=5
-discardCommand1[$e]=rm,$HOME/.config/session/kwin_108edcc878000156787469700000031580007_1575521115_716484
+discardCommand1[$e]=rm,$HOME/.config/session/kwin_108edcc878000156787469700000031580007_1576627686_878835
+discardCommand3[$e]=rm,$HOME/.config/session/yakuake_108edcc878000156769870900000033540011_1576627686_846742
 program1=/usr/bin/kwin_x11
 program2=/usr/bin/msm_kde_notifier
 program3=/usr/bin/yakuake
 program4=/usr/bin/octopi-notifier
 program5=pulseaudio
-restartCommand1=/usr/bin/kwin_x11,-session,108edcc878000156787469700000031580007_1575521115_716484
-restartCommand2=/usr/bin/msm_kde_notifier,-session,108edcc878000156769870900000033540010_1575521115_708997
-restartCommand3=/usr/bin/yakuake,-session,108edcc878000156769870900000033540011_1575521115_703773
-restartCommand4=/usr/bin/octopi-notifier,-session,108edcc878000157026122600000015470012_1575521115_704049
+restartCommand1=/usr/bin/kwin_x11,-session,108edcc878000156787469700000031580007_1576627686_878835
+restartCommand2=/usr/bin/msm_kde_notifier,-session,108edcc878000156769870900000033540010_1576627686_846424
+restartCommand3=/usr/bin/yakuake,-session,108edcc878000156769870900000033540011_1576627686_846742
+restartCommand4=/usr/bin/octopi-notifier,-session,108edcc878000157644290200000008980010_1576627686_846069
 restartCommand5=
 restartStyleHint1=0
 restartStyleHint2=0

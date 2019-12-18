@@ -4,10 +4,10 @@ RightButton;NoModifier=org.kde.contextmenu
 wheel:Vertical;NoModifier=org.kde.switchdesktop
 
 [ActionPlugins][1]
-MidButton;NoModifier=org.kde.paste
 RightButton;NoModifier=org.kde.contextmenu
 
 [Containments][1]
+ItemGeometriesHorizontal=
 activityId=
 formfactor=2
 immutability=1
@@ -21,18 +21,11 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][1][Applets][2][Configuration]
-PreloadWeight=92
+PreloadWeight=44
 
 [Containments][1][Applets][2][Configuration][General]
-favorites=firefox.desktop,qupzilla.desktop,org.kde.dolphin.desktop,org.kde.konversation.desktop,libreoffice-writer.desktop,cantata.desktop,kde4-digikam.desktop,org.kde.konsole.desktop,octopi.desktop,systemsettings.desktop
 favoritesPortedToKAstats=true
 systemApplications=systemsettings.desktop,org.kde.kinfocenter.desktop
-
-[Containments][1][Applets][2][Configuration][Shortcuts]
-global=Alt+F1
-
-[Containments][1][Applets][2][Shortcuts]
-global=Alt+F1
 
 [Containments][1][Applets][3]
 immutability=1
@@ -47,9 +40,6 @@ plugin=org.kde.plasma.icontasks
 
 [Containments][1][Applets][4][Configuration]
 PreloadWeight=0
-
-[Containments][1][Applets][4][Configuration][General]
-launchers=file:///usr/share/applications/org.kde.dolphin.desktop?wmClass=dolphin,file:///usr/share/applications/firefox.desktop?wmClass=firefox,applications:steam.desktop
 
 [Containments][1][Applets][5]
 immutability=1
@@ -73,10 +63,6 @@ plugin=org.kde.plasma.systemtray
 PreloadWeight=0
 SystrayContainmentId=8
 
-[Containments][1][Applets][7][Configuration][Containments][8]
-formfactor=2
-location=4
-
 [Containments][1][Applets][8]
 immutability=1
 plugin=org.kde.plasma.digitalclock
@@ -84,18 +70,92 @@ plugin=org.kde.plasma.digitalclock
 [Containments][1][Applets][8][Configuration]
 PreloadWeight=0
 
-[Containments][1][ConfigDialog]
-DialogHeight=86
-DialogWidth=1920
-
 [Containments][1][Configuration]
 PreloadWeight=0
 
 [Containments][1][General]
 AppletOrder=2;3;4;5;6;7;8
 
-[Containments][35]
-activityId=f35d5ecc-e2e6-489a-94ce-fdcef27a9185
+[Containments][1][Wallpaper][org.kde.image][General]
+Image=file:///usr/share/wallpapers/Breath/contents/images/1920x1080.png
+
+[Containments][2]
+activityId=
+formfactor=2
+immutability=1
+lastScreen=0
+location=4
+plugin=org.kde.panel
+wallpaperplugin=org.kde.image
+
+[Containments][2][Applets][3]
+immutability=1
+plugin=org.kde.plasma.kickoff
+
+[Containments][2][Applets][3][Configuration]
+PreloadWeight=92
+
+[Containments][2][Applets][3][Configuration][General]
+favoritesPortedToKAstats=true
+systemApplications=systemsettings.desktop,org.kde.kinfocenter.desktop
+
+[Containments][2][Applets][3][Configuration][Shortcuts]
+global=Alt+F1
+
+[Containments][2][Applets][3][Shortcuts]
+global=Alt+F1
+
+[Containments][2][Applets][4]
+immutability=1
+plugin=org.kde.plasma.pager
+
+[Containments][2][Applets][4][Configuration]
+PreloadWeight=0
+
+[Containments][2][Applets][5]
+immutability=1
+plugin=org.kde.plasma.taskmanager
+
+[Containments][2][Applets][5][Configuration]
+PreloadWeight=0
+
+[Containments][2][Applets][5][Configuration][General]
+launchers=applications:chromium.desktop
+
+[Containments][2][Applets][6]
+immutability=1
+plugin=org.kde.plasma.systemtray
+
+[Containments][2][Applets][6][Configuration]
+PreloadWeight=0
+SystrayContainmentId=7
+
+[Containments][2][Applets][8]
+immutability=1
+plugin=org.kde.plasma.digitalclock
+
+[Containments][2][Applets][8][Configuration]
+PreloadWeight=0
+
+[Containments][2][Applets][9]
+immutability=1
+plugin=org.kde.plasma.showdesktop
+
+[Containments][2][Applets][9][Configuration]
+PreloadWeight=0
+
+[Containments][2][ConfigDialog]
+DialogHeight=86
+DialogWidth=1920
+
+[Containments][2][Configuration]
+PreloadWeight=0
+
+[Containments][2][General]
+AppletOrder=3;4;5;6;8;9
+
+[Containments][36]
+activityId=a653e3ba-8e69-42c4-bff5-df161d8f3803
 formfactor=0
 immutability=1
 lastScreen=0
@@ -103,22 +163,97 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
-[Containments][35][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
+[Containments][36][Configuration]
+PreloadWeight=2
 
-[Containments][35][Configuration]
+[Containments][36][Wallpaper][org.kde.image][General]
+Image=file:///home/alex/.config/variety/wallpaper/wallpaper-clock-9a96ff94ab994d5cb792e19fa381d640.jpg
+
+[Containments][7]
+activityId=
+formfactor=2
+immutability=1
+lastScreen=0
+location=4
+plugin=org.kde.plasma.private.systemtray
+wallpaperplugin=org.kde.image
+
+[Containments][7][Applets][10]
+immutability=1
+plugin=org.kde.kdeconnect
+
+[Containments][7][Applets][10][Configuration]
 PreloadWeight=0
 
-[Containments][35][General]
-ToolBoxButtonState=topright
-ToolBoxButtonX=1892
-positions=1,17,desktop:/Music,0,4,desktop:/Pictures,0,5,desktop:/Videos,0,6,desktop:/1.html,0,7,desktop:/Desktop,0,0,desktop:/Documents,0,1,desktop:/Downloads,0,2,desktop:/Github,0,3,desktop:/stanfordnlp_resources,0,9
-previews=false
-sortMode=-1
+[Containments][7][Applets][11]
+immutability=1
+plugin=org.kde.plasma.clipboard
 
-[Containments][35][Wallpaper][org.kde.image][General]
-Image=file:///home/alex/.config/variety/wallpaper/wallpaper-clock-086eb3d328ca2534c9ddacaa47ba2e00.jpg
+[Containments][7][Applets][11][Configuration]
+PreloadWeight=0
+
+[Containments][7][Applets][12]
+immutability=1
+plugin=org.kde.plasma.printmanager
+
+[Containments][7][Applets][12][Configuration]
+PreloadWeight=0
+
+[Containments][7][Applets][13]
+immutability=1
+plugin=org.kde.plasma.devicenotifier
+
+[Containments][7][Applets][13][Configuration]
+PreloadWeight=0
+
+[Containments][7][Applets][14]
+immutability=1
+plugin=org.kde.plasma.notifications
+
+[Containments][7][Applets][14][Configuration]
+PreloadWeight=0
+
+[Containments][7][Applets][15]
+immutability=1
+plugin=org.kde.plasma.keyboardindicator
+
+[Containments][7][Applets][15][Configuration]
+PreloadWeight=0
+
+[Containments][7][Applets][16]
+immutability=1
+plugin=org.kde.plasma.volume
+
+[Containments][7][Applets][16][Configuration]
+PreloadWeight=0
+
+[Containments][7][Applets][17]
+immutability=1
+plugin=org.kde.plasma.battery
+
+[Containments][7][Applets][17][Configuration]
+PreloadWeight=0
+
+[Containments][7][Applets][18]
+immutability=1
+plugin=org.kde.plasma.networkmanagement
+
+[Containments][7][Applets][18][Configuration]
+PreloadWeight=0
+
+[Containments][7][Applets][19]
+immutability=1
+plugin=org.kde.plasma.bluetooth
+
+[Containments][7][Applets][19][Configuration]
+PreloadWeight=0
+
+[Containments][7][Configuration]
+PreloadWeight=0
+
+[Containments][7][General]
+extraItems=org.kde.plasma.printmanager,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.notifications,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.kdeconnect,org.kde.plasma.keyboardindicator,org.kde.plasma.battery,org.kde.plasma.volume
+knownItems=org.kde.plasma.printmanager,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.notifications,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.kdeconnect,org.kde.plasma.keyboardindicator,org.kde.plasma.battery,org.kde.plasma.volume
 
 [Containments][8]
 activityId=
@@ -129,82 +264,75 @@ location=4
 plugin=org.kde.plasma.private.systemtray
 wallpaperplugin=org.kde.image
 
-[Containments][8][Applets][36]
+[Containments][8][Applets][37]
 immutability=1
 plugin=org.kde.kdeconnect
 
-[Containments][8][Applets][36][Configuration]
-PreloadWeight=0
-
-[Containments][8][Applets][37]
-immutability=1
-plugin=org.kde.plasma.clipboard
-
 [Containments][8][Applets][37][Configuration]
-PreloadWeight=0
+PreloadWeight=2
 
 [Containments][8][Applets][38]
 immutability=1
-plugin=org.kde.plasma.printmanager
+plugin=org.kde.plasma.clipboard
 
 [Containments][8][Applets][38][Configuration]
-PreloadWeight=0
+PreloadWeight=2
 
 [Containments][8][Applets][39]
 immutability=1
-plugin=org.kde.plasma.devicenotifier
+plugin=org.kde.plasma.printmanager
 
 [Containments][8][Applets][39][Configuration]
-PreloadWeight=0
+PreloadWeight=2
 
 [Containments][8][Applets][40]
 immutability=1
-plugin=org.kde.plasma.notifications
+plugin=org.kde.plasma.devicenotifier
 
 [Containments][8][Applets][40][Configuration]
-PreloadWeight=0
+PreloadWeight=2
 
 [Containments][8][Applets][41]
 immutability=1
-plugin=org.kde.plasma.keyboardindicator
+plugin=org.kde.plasma.notifications
 
 [Containments][8][Applets][41][Configuration]
-PreloadWeight=0
+PreloadWeight=2
 
 [Containments][8][Applets][42]
 immutability=1
-plugin=org.kde.plasma.volume
+plugin=org.kde.plasma.keyboardindicator
 
 [Containments][8][Applets][42][Configuration]
-PreloadWeight=0
+PreloadWeight=2
 
 [Containments][8][Applets][43]
 immutability=1
-plugin=org.kde.plasma.battery
+plugin=org.kde.plasma.volume
 
 [Containments][8][Applets][43][Configuration]
-PreloadWeight=0
+PreloadWeight=2
 
 [Containments][8][Applets][44]
 immutability=1
-plugin=org.kde.plasma.networkmanagement
+plugin=org.kde.plasma.battery
 
 [Containments][8][Applets][44][Configuration]
-PreloadWeight=0
+PreloadWeight=2
 
 [Containments][8][Applets][45]
 immutability=1
-plugin=org.kde.plasma.bluetooth
+plugin=org.kde.plasma.networkmanagement
 
 [Containments][8][Applets][45][Configuration]
-PreloadWeight=0
+PreloadWeight=2
 
 [Containments][8][Applets][46]
 immutability=1
-plugin=org.kde.plasma.mediacontroller
+plugin=org.kde.plasma.bluetooth
 
 [Containments][8][Applets][46][Configuration]
-PreloadWeight=42
+PreloadWeight=2
 
 [Containments][8][Configuration]
 PreloadWeight=0
@@ -214,5 +342,5 @@ extraItems=org.kde.plasma.printmanager,org.kde.plasma.mediacontroller,org.kde.pl
 knownItems=org.kde.plasma.printmanager,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.notifications,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.kdeconnect,org.kde.plasma.keyboardindicator,org.kde.plasma.battery,org.kde.plasma.volume
 
 [ScreenMapping]
-itemsOnDisabledScreens=0,26,desktop:/下载,desktop:/steam.desktop,desktop:/dead.letter,desktop:/chromium.desktop,desktop:/Pictures,desktop:/file:⁄⁄⁄home⁄alex.⁄sdf,desktop:/2.c,desktop:/Documents,desktop:/Downloads,desktop:/Music,desktop:/problems and solutions.md,desktop:/Github,desktop:/桌面,desktop:/stanfordnlp_resources,desktop:/2,desktop:/.directory,desktop:/1,desktop:/1.txt,desktop:/10-13.py,desktop:/1.c,desktop:/音乐,desktop:/Module,desktop:/Videos,desktop:/1.html,desktop:/file:⁄⁄⁄home⁄alex.⁄.sdf,desktop:/Desktop
-screenMapping=desktop:/下载,0,desktop:/steam.desktop,0,desktop:/dead.letter,0,desktop:/chromium.desktop,0,desktop:/Pictures,0,desktop:/file:⁄⁄⁄home⁄alex.⁄sdf,0,desktop:/2.c,0,desktop:/Documents,0,file:///home/alex/file:⁄⁄⁄home⁄alex⁄sdf,0,desktop:/Downloads,0,desktop:/Music,0,desktop:/problems and solutions.md,0,desktop:/Github,0,desktop:/桌面,0,desktop:/stanfordnlp_resources,0,desktop:/2,0,desktop:/.directory,0,desktop:/1,0,desktop:/1.txt,0,desktop:/10-13.py,0,desktop:/1.c,0,desktop:/音乐,0,desktop:/Module,0,desktop:/Videos,0,desktop:/1.html,0,desktop:/file:⁄⁄⁄home⁄alex.⁄.sdf,0,desktop:/Desktop,0
+itemsOnDisabledScreens=
+screenMapping=desktop:/图片,0,desktop:/Music,0,desktop:/1.txt,0,desktop:/1.c,0,desktop:/dead.letter,0,desktop:/chromium.desktop,0,desktop:/音乐,0,desktop:/stanfordnlp_resources,0,desktop:/pkg.txt,0,desktop:/Videos,0,desktop:/文档,0,desktop:/Github,0,desktop:/Pictures,0,desktop:/1.html,0,desktop:/problems and solutions.md,0,desktop:/1,0,desktop:/Module,0,desktop:/2,0,desktop:/.directory,0,desktop:/视频,0,desktop:/模板,0,desktop:/桌面,0,desktop:/a.out,0,desktop:/Documents,0,desktop:/下载,0,desktop:/1.py,0,desktop:/file:⁄⁄⁄home⁄alex.⁄sdf,0,desktop:/Desktop,0,desktop:/2.c,0,desktop:/Downloads,0,desktop:/steam.desktop,0,desktop:/electron-ssr-0.2.7,0,desktop:/公共,0,desktop:/10-13.py,0,desktop:/file:⁄⁄⁄home⁄alex.⁄.sdf,0

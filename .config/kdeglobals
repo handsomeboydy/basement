@@ -91,22 +91,15 @@ ForegroundNormal=41,47,52
 ForegroundPositive=52,152,219
 ForegroundVisited=145,61,136
 
-[DirSelect Dialog]
-DirSelectDialog Size=640,480
-History Items[$e]=file:$HOME/Downloads,file:$HOME/Desktop
-
 [General]
-BrowserApplication=chromium.desktop
 ColorScheme=Breath
 Name=Breath
-XftAntialias=true
-XftHintStyle=
-XftSubPixel=none
+dbfile=/home/alex/.mozilla/firefox/p7z5kn6h.default/places.sqlite
 shadeSortColumn=true
 toolBarFont=Noto Sans,10,-1,5,50,0,0,0,0,0
 
 [Icons]
-Theme=breeze
+Theme=breath
 
 [KDE]
 contrast=4
